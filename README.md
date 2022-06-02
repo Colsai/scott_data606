@@ -1,4 +1,4 @@
-# UMBC: DATA606: Capstone
+## UMBC Capstone- Final Project
 - UMBC DATA606: Final Project
 - Scott Hirabayashi
 - 
