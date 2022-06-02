@@ -1,7 +1,7 @@
 ## For your project proposal, please use the following questions to guide your writing:
 
 1. What is your issue of interest (provide sufficient background information)?
-> 
+2. Why is this issue important to you and/or to others?
 3. Why is this issue important to you and/or to others?
 4. What questions do you have in mind and would like to answer?
 5. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?
