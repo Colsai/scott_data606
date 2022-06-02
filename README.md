@@ -1,4 +1,4 @@
-## UMBC Capstone- Final Project
-- UMBC DATA606: Final Project
+# UMBC Capstone- Final Project
+- Summer 2022 (June-August)
 - Scott Hirabayashi
 - 
