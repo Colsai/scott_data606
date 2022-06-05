@@ -20,10 +20,12 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - The primary challenge is in finding a way to scrape the data. The initial scrape of the data for all projects 
 
 **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
-- Projects and Reports from HHS OIG, 2017-Current.
+- Projects and Reports scraped from HHS OIG website, 2017-Current.
  
 **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**  
 - Titles of work project
+- Status of Project (Completed, Cancelled, In-Progress)
+- Agency focus areas (CMS/FDA/CDC/etc.)
 - Summaries of work projects
 - Summaries of reports
 - Status of items
