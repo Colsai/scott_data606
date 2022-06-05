@@ -1,4 +1,7 @@
-## For your project proposal, please use the following questions to guide your writing:
+# Project Proposal
+## DATA606
+
+## Topic Overview
 
 1. What is your issue of interest (provide sufficient background information)?
 > I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
