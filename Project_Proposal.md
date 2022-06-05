@@ -1,11 +1,9 @@
-# DATA606- A Story of Modern Healthcare
+# DATA606: A Story of Modern Healthcare
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)
 ## Analyzing Common Problem Areas through DHHS OIG Data
- 
+
 **1. What is your issue of interest (provide sufficient background information)?**
-
 [![IMAGE_ALT](https://img.youtube.com/vi/XYhihIzGi5U/0.jpg)](https://www.youtube.com/watch?v=XYhihIzGi5U)
-
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central fouc on Medicare and Medicaid programs. 
 
@@ -18,7 +16,8 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 - With models, analyze changes in topics and new focus areas that OIG is performing.
 
 **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**
- 
+HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/reports-and-publications/workplan/.
+
 **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**
  
 **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**
