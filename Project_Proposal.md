@@ -1,9 +1,10 @@
 ## For your project proposal, please use the following questions to guide your writing:
 
 1. What is your issue of interest (provide sufficient background information)?
-> 
+> I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
+
 2. Why is this issue important to you and/or to others?
-> 
+> Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. 
 3. What questions do you have in mind and would like to answer?
 > 
 4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?
