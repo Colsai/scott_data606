@@ -25,7 +25,7 @@ HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/
 **8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**  
 
 **9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?**  
-
+<hr>
 - *Please use the proposal.md profile for the proposal. Write it in your personal account's repository. After completion and before submission, refresh the contents in the class organization using "Fetch Upstream". Submit the link to the repository in the class organization.*
 - *Please make sure it is well formated and styled using Markdown.*
 - *We will randomly select a few proposals to walk through during the online session. If you are selected, you will be sharing your proposal and the class will provide feedback.*
