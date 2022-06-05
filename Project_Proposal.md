@@ -3,11 +3,7 @@
 
 1. What is your issue of interest (provide sufficient background information)?
 
-[![IMAGE_ALT](https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg)](https://www.youtube.com/watch?v=UmX4kyB2wfg)
-
-<p align = "center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XYhihIzGi5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+[![IMAGE_ALT](https://www.youtube.com/embed/XYhihIzGi5U)](https://www.youtube.com/embed/XYhihIzGi5U)
   
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central fouc on Medicare and Medicaid programs. 
