@@ -1,9 +1,9 @@
 # DATA606: A Story of Modern Healthcare
-
+![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 ## Analyzing Common Problem Areas through DHHS OIG Data
 
 **1. What is your issue of interest (provide sufficient background information)?**
-![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
+
 <hr/>  
 
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
