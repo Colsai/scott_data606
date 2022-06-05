@@ -1,16 +1,12 @@
-# DATA606: A Story of Modern Healthcare
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
-## Analyzing Common Problem Areas through DHHS OIG Data
+# DATA606: A Story of Modern Healthcare
+### Analyzing Common Problem Areas through DHHS OIG Data
 
-**1. What is your issue of interest (provide sufficient background information)?**
-
-<hr/>  
-
+**1. What is your issue of interest (provide sufficient background information)?**  
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
-The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central fouc on Medicare and Medicaid programs. 
 
 **2. Why is this issue important to you and/or to others?**
-Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations. 
+The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central fouc on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations. 
 
 **3. What questions do you have in mind and would like to answer?**
 - Descriptive statistics to understand the breakdown of past work that OIG has undertaken, trends in work products.
