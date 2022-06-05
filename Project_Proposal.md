@@ -3,6 +3,8 @@
 
 1. What is your issue of interest (provide sufficient background information)?
 
+[![IMAGE_ALT](https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg)](https://www.youtube.com/watch?v=UmX4kyB2wfg)
+
 <p align = "center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XYhihIzGi5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
