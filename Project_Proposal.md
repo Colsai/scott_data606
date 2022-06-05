@@ -1,9 +1,7 @@
 # DATA606- A Story of Modern Healthcare
 ## Analyzing Common Problem Areas through DHHS OIG Data
 
-<center>
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)
- </center>
  
 **1. What is your issue of interest (provide sufficient background information)?**
 
