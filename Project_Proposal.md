@@ -1,6 +1,5 @@
-# A Story of Modern Healthcare
+# DATA606- A Story of Modern Healthcare
 ## Analyzing Common Problem Areas through DHHS OIG Data
-## DATA606: Initial Proposal
 
 1. What is your issue of interest (provide sufficient background information)?
 > I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
