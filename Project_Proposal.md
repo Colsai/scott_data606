@@ -1,4 +1,5 @@
-# Project Proposal
+# A Story of Modern Healthcare
+## Analyzing Common Problem Areas through DHHS OIG Data
 ## DATA606: Initial Proposal
 
 1. What is your issue of interest (provide sufficient background information)?
