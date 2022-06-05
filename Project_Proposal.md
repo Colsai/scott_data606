@@ -3,7 +3,7 @@
 
 1. What is your issue of interest (provide sufficient background information)?
 
-[![IMAGE_ALT](https://www.youtube.com/vi/XYhihIzGi5U/0.jpg)](https://www.youtube.com/watch?v=XYhihIzGi5U)
+[![IMAGE_ALT](https://img.youtube.com/vi/XYhihIzGi5U/0.jpg)](https://www.youtube.com/watch?v=XYhihIzGi5U)
 
 [![IMAGE_ALT](https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg)](https://www.youtube.com/watch?v=UmX4kyB2wfg)
 
