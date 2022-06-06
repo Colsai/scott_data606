@@ -5,6 +5,9 @@
 **1. What is your issue of interest (provide sufficient background information)?**  
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
 
+During my time with OIG HHS, we coordinate updates and improvements for the existing data. However, those improvements largely fall outside of content analysis, and my interest here is providing an analysis of here.
++
+
 **2. Why is this issue important to you and/or to others?**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. 
 
