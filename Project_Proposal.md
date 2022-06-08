@@ -37,15 +37,15 @@ These are not large files (1-2mb), but contain full summary-level data of all re
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
  
 ### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**  
-- Titles of work plans
-- Status of Project (Completed, Cancelled, In-Progress)
+- Titles of work plans (as focus areas)
+- Current status of work plans (Completed, Cancelled, In-Progress)
 - Agency focus areas (CMS/FDA/CDC/etc.)
 - Summaries of work projects
 - Summaries of reports
 - Status of items
 
-From each of the reports, I'd also like to pull:
-- Locations
+**From each of the reports, I'd also like to pull from the texts:**
+- Locations of the analysis
 - Frequent topics/topic modeling
 - Recoveries (in dollar amounts)
 
