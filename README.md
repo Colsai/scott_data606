@@ -1,4 +1,4 @@
-# Analyzing Healthcare Protections
+# Analyzing the Watchdog
 ### A direct look at the work plans and reports from HHS OIG
 - Summer 2022 (June-August)
 - Scott Hirabayashi
