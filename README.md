@@ -1,4 +1,5 @@
-# UMBC Capstone- Final Project
+# Analyzing Healthcare Protections
+### A direct look at the work plans and reports from HHS OIG
 - Summer 2022 (June-August)
 - Scott Hirabayashi
 
