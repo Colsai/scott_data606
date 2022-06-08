@@ -32,18 +32,19 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 Which scrapes for two data sources:
 
 #### Aggregate-level data
-![image](https://user-images.githubusercontent.com/70355052/172527208-be0283b0-512e-49b7-bf5a-820226907e39.png)
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_Reports.csv
+![image](https://user-images.githubusercontent.com/70355052/172527208-be0283b0-512e-49b7-bf5a-820226907e39.png)
 
 #### Reports data
-![image](https://user-images.githubusercontent.com/70355052/172527255-2f155ac1-1d6c-4be7-8be7-1c0334cbf247.png)
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv
+![image](https://user-images.githubusercontent.com/70355052/172527255-2f155ac1-1d6c-4be7-8be7-1c0334cbf247.png)
+
+#### Example of a report (scraped)
 ![image](https://user-images.githubusercontent.com/70355052/172527504-e34cc318-9858-49fc-b9b8-8d37499ecb9a.png)
 
 *These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.*
 
 The major issue with this data is that there is a lot of cleanup and standardization needed. Many of the data elements need to be expanded, such as agency, where acronyms are used- ex. *Food and Drug Administration for one item, FDA for another' Additionally, reports data need several steps of cleanup to make them usable:
-
 
 ### **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
@@ -73,6 +74,8 @@ My biggest focus area here is providing insight into what the data say about OIG
 
 ### **9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?**  
 I'm hoping to use this data to analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. 
+
+The ultimate value of this data is that it is somewhat novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
 
 <hr>
 - *Please use the proposal.md profile for the proposal. Write it in your personal account's repository. After completion and before submission, refresh the contents in the class organization using "Fetch Upstream". Submit the link to the repository in the class organization.*
