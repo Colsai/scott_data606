@@ -30,19 +30,20 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - https://github.com/Colsai/scott_data606/blob/main/HHSOIG_WP_Scrapers.ipynb
 
 Which scrapes for two data sources:
+
+#### Aggregate-level data
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_Reports.csv
+
+#### Reports data
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv
+![image](https://user-images.githubusercontent.com/70355052/172527504-e34cc318-9858-49fc-b9b8-8d37499ecb9a.png)
 
 ![image](https://user-images.githubusercontent.com/70355052/172527208-be0283b0-512e-49b7-bf5a-820226907e39.png)
 ![image](https://user-images.githubusercontent.com/70355052/172527255-2f155ac1-1d6c-4be7-8be7-1c0334cbf247.png)
+*These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.*
 
-These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.
+The major issue with this data is that there is a lot of cleanup and standardization needed. Many of the data elements need to be expanded, such as agency, where acronyms are used- ex. *Food and Drug Administration for one item, FDA for another' Additionally, reports data need several steps of cleanup to make them usable:
 
-The major issue with this data is that there is a lot of cleanup and standardization needed. Many of the data elements need to be expanded, such as agency, where acronyms are used:
-- ex. *Food and Drug Administration for one item, FDA for another'
-
-Additionally, reports data need several steps of cleanup to make them usable:
-![image](https://user-images.githubusercontent.com/70355052/172527504-e34cc318-9858-49fc-b9b8-8d37499ecb9a.png)
 
 ### **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
