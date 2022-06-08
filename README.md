@@ -8,8 +8,12 @@
 
 ## Table of Contents
 ### Part 1: Proposal
+<table>
+<tr>
+<th>
 - Initial Project Proposal: https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
 - Final Project Proposal
+</table>
 ### Part 2: Exploratory Data Analysis
 
 
