@@ -10,12 +10,26 @@
 ### Part 1: Proposal
 <table>
 <tr>
-<th> *Initial Project Proposal:*</th> 
+<th> Initial Project Proposal:</th> 
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 <tr>
-<th> *Final Project Proposal:*
+<th> Final Project Proposal:
 </table>
+  
 ### Part 2: Exploratory Data Analysis
-
+<table>
+<tr>
+<th> Initial Project Proposal:</th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+<tr>
+<th> Final Project Proposal:
+</table>
 
 ### Part 3: Modeling and Conclusions
+<table>
+<tr>
+<th> Initial Project Proposal:</th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+<tr>
+<th> Final Project Proposal:
+</table>
