@@ -14,6 +14,7 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 **3. What questions do you have in mind and would like to answer?** 
 - What are some themes and trends we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
+- How do we connect these outcomes to OIG's priority outcomes?
 
 *Priority Outcomes*
 1. Minimizing risks to beneficiaries and 
@@ -21,13 +22,20 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 
 **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**  
 - HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/reports-and-publications/workplan/.
-- The primary challenge is in finding a way to scrape the data. The initial scrape of the data for all projects 
+- The primary challenge is in finding a way to scrape the data. I've initially scraped the paragraphs by writing an initial scraper: 
+- https://github.com/Colsai/scott_data606/blob/main/HHSOIG_WP_Scrapers.ipynb
+
+Which scrapes for two data sources:
+- https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_Reports.csv
+- https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv
+
+These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.
 
 **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
  
 **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**  
-- Titles of work project
+- Titles of work plans
 - Status of Project (Completed, Cancelled, In-Progress)
 - Agency focus areas (CMS/FDA/CDC/etc.)
 - Summaries of work projects
@@ -42,6 +50,7 @@ From each of the reports, I'd also like to pull:
 **7. What kinds of techniques/models do you plan to use (for example, clustering, NLP, ARIMA, etc.)?**  
 - Text Analytics
 - Unstructured NLP for analyzing frequent topics
+- Dashboard development
 
 **8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**
 This is a difficult question, since I think a lot of the initial work will be to clean up the data and start to analyze for trends.
