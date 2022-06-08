@@ -7,6 +7,10 @@
 - https://github.com/Colsai/scott_data606/tree/main/Data_Sources
 
 ## Table of Contents
+### Part 1: Proposal
+- Initial Project Proposal: https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
+- Final Project Proposal
+### Part 2: Exploratory Data Analysis
 
-1. Initial Project Proposal: https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
-2. Final Project Proposal
+
+### Part 3: Modeling and Conclusions
