@@ -2,7 +2,7 @@
 # DATA606: Protecting Modern US Healthcare
 ## Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 <hr>
-### **1. What is your issue of interest (provide sufficient background information)?**  
+###**1. What is your issue of interest (provide sufficient background information)?**  
 I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports created. 
 
 Work plan items are essentially projects that HHS OIG declares for work. After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
