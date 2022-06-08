@@ -7,7 +7,7 @@ I'm interested in understanding more about the Department of Health and Human Se
 
 **2. Why is this issue important to you and/or to others?**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.   
-The work plan can be found at: https://oig.hhs.gov/reports-and-publications/workplan/index.asp.
+*The work plan can be found at: https://oig.hhs.gov/reports-and-publications/workplan/index.asp.*
 
 There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations of people (elderly, low-income, minority groups, all which may be disproportionately affected by fraud/waste/abuse). However, the current work plan that provides data on focus areas is difficult to navigate, and is largely unstructured. 
 
@@ -43,9 +43,10 @@ From each of the reports, I'd also like to pull:
 - Text Analytics
 - Unstructured NLP for analyzing frequent topics
 
-**8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**  
+**8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**
+This is a difficult question, since I think a lot of the initial work will be to clean up the data and start to analyze for trends.
 
-**9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?** - I'm hoping to use this data to analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time.  
+**9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?** - I'm hoping to use this data to analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard that consolidates this data in a user-friendly way. 
 
 <hr>
 - *Please use the proposal.md profile for the proposal. Write it in your personal account's repository. After completion and before submission, refresh the contents in the class organization using "Fetch Upstream". Submit the link to the repository in the class organization.*
@@ -54,3 +55,5 @@ From each of the reports, I'd also like to pull:
 
 ## References
 Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
+
+“What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
