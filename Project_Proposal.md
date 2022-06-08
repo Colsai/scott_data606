@@ -42,6 +42,7 @@ These are not large files (1-2mb), but contain full summary-level data of all re
 - Titles of work plans (as focus areas)
 - Current status of work plans (Completed, Cancelled, In-Progress)
 - Agency focus areas (CMS/FDA/CDC/etc.)
+- Expected date of completion for projects
 - Summaries of work projects
 - Summaries of reports
 - Status of items
