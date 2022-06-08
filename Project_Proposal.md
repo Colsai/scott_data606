@@ -41,6 +41,9 @@ These are not large files (1-2mb), but contain full summary-level data of all re
 The major issue with this data is that there is a lot of cleanup and standardization needed. Many of the data elements need to be expanded, such as agency, where acronyms are used:
 - ex. *Food and Drug Administration for one item, FDA for another'
 
+Additionally, reports data need several steps of cleanup to make them usable:
+![image](https://user-images.githubusercontent.com/70355052/172527504-e34cc318-9858-49fc-b9b8-8d37499ecb9a.png)
+
 ### **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
  
