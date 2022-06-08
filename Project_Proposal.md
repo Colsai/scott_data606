@@ -39,7 +39,8 @@ Which scrapes for two data sources:
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv
 ![image](https://user-images.githubusercontent.com/70355052/172527255-2f155ac1-1d6c-4be7-8be7-1c0334cbf247.png)
 
-#### Example of a report (scraped)
+#### Example of a report (scraped data)
+*Data is as it currently is, before cleanup*
 ![image](https://user-images.githubusercontent.com/70355052/172527504-e34cc318-9858-49fc-b9b8-8d37499ecb9a.png)
 
 *These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.*
