@@ -2,12 +2,10 @@
 - Summer 2022 (June-August)
 - Scott Hirabayashi
 
-## Introduction
+## Data Sources
+- https://github.com/Colsai/scott_data606/tree/main/Data_Sources
 
+## Table of Contents
 
-## Focus Area
-
-
-##
-Initial Project Proposal https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
-Final Project Proposal
+1. Initial Project Proposal:https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
+2. Final Project Proposal
