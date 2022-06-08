@@ -15,28 +15,32 @@
 <th> Initial Project Proposal:</th> 
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 <tr>
-<th> Final Project Proposal:
+  <th> Final Project Proposal: </th>
+<th> LINK </th>
 </table>
   
 ### PHASE II: Data Preparation & EDA
 #### June 22, June 29, July 6	
 <table>
 <tr>
-<th> Initial Project Proposal:</th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+<th> STEP </th> 
+<th> LINK </th>
+</tr>
 <tr>
-<th> Final Project Proposal:
+<th> STEP </th> 
+<th> LINK </th>
+</tr>
 </table>
 
 ### PHASE III: Model Training & Deployment 
 #### July 13, July 20, July 27
 <table>
 <tr>
-<th> Initial Project Proposal:</th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+<th> STEP </th> 
+<th> LINK </th>
 </tr>
 <tr>
-<th> Initial Project Proposal:</th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
-</tr>  
+<th> STEP </th> 
+<th> LINK </th>
+</tr>
 </table>
