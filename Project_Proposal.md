@@ -33,25 +33,7 @@ Which scrapes for two data sources:
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_Reports.csv
 - https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv
 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 654 entries, 0 to 653
-Data columns (total 9 columns):
- #   Column                                Non-Null Count  Dtype 
----  ------                                --------------  ----- 
- 0   Announced or Revised                  654 non-null    object
- 1   Agency                                654 non-null    object
- 2   Title                                 654 non-null    object
- 3   Component                             653 non-null    object
- 4   Report Number(s)                      654 non-null    object
- 5   Expected Issue Date (FY)              649 non-null    object
- 6   Website_Link                          654 non-null    object
- 7   Summary                               654 non-null    object
- 8   Office of Evaluation and Inspections  1 non-null      object
-dtypes: object(9)
-memory usage: 46.1+ KB
-
-
-
+![image](https://user-images.githubusercontent.com/70355052/172527208-be0283b0-512e-49b7-bf5a-820226907e39.png)
 
 These are not large files (1-2mb), but contain full summary-level data of all reported attributed projects connected to publically-available projects from HHS OIG.
 
