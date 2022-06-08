@@ -1,9 +1,11 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # DATA606: Protecting Modern US Healthcare
-### Analysis and Modeling of Common Problem Areas through DHHS OIG Data
+### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 
 **1. What is your issue of interest (provide sufficient background information)?**  
-I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, and work plan items. These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
+I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan,  work plan items, and the subsequent reports created. 
+
+These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
 
 **2. Why is this issue important to you and/or to others?**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.   
@@ -15,10 +17,10 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - What are some themes and trends we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
 - How do we connect these outcomes to OIG's priority outcomes?
-
 *Priority Outcomes*
-1. Minimizing risks to beneficiaries and 
+1. Minimizing risks to beneficiaries & 
 2. Safeguarding programs from improper payments and fraud. 
+- Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)
 
 **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**  
 - HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/reports-and-publications/workplan/.
