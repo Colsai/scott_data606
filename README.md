@@ -8,5 +8,5 @@
 
 ## Table of Contents
 
-1. Initial Project Proposal:https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
+1. Initial Project Proposal: https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
 2. Final Project Proposal
