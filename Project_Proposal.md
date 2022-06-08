@@ -3,9 +3,11 @@
 ### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 
 ### **1. What is your issue of interest (provide sufficient background information)?**  
-I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan,  work plan items, and the subsequent reports created. 
+I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports created. 
 
-These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
+Work plan items are essentially projects that HHS OIG declares for work. After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
+
+However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
 
 ### **2. Why is this issue important to you and/or to others?**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.   
@@ -52,10 +54,11 @@ These are not large files (1-2mb), but contain full summary-level data of all re
 ### **7. What kinds of techniques/models do you plan to use (for example, clustering, NLP, ARIMA, etc.)?**  
 - Text Analytics
 - Unstructured NLP for analyzing frequent topics
+- Unsupervised text clustering
 - Dashboard development
 
 ### **8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**
-This is a difficult question, since I think a lot of the initial work will be to clean up the data and start to analyze for trends.
+My biggest focus area here is providing insight into what the data say about OIG's current planned work, and past work.
 
 ### **9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?**  
 I'm hoping to use this data to analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. 
