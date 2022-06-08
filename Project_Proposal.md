@@ -3,19 +3,20 @@
 ### Analysis and Modeling of Common Problem Areas through DHHS OIG Data
 
 **1. What is your issue of interest (provide sufficient background information)?**  
-I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on work plan items. These work plan items and reports are all public data.
-
-During my time with OIG HHS, we coordinate updates and improvements for the existing data. However, those improvements largely fall outside of content analysis, and my interest here is providing an analysis of here.
+I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, and work plan items. These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
 
 **2. Why is this issue important to you and/or to others?**  
-The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States. OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. 
+The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues. The work plan https://oig.hhs.gov/reports-and-publications/workplan/index.asp
 
 There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations of people (elderly, low-income, minority groups, all which may be disproportionately affected by fraud/waste/abuse). 
 
 **3. What questions do you have in mind and would like to answer?** 
-- What are some themes and trends we can view from looking at the projects that OIG is undertaking?
+- What are some themes and trends we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
-- 
+
+### Priority Outcomes
+1. minimizing risks to beneficiaries and 
+2. safeguarding programs from improper payments and fraud. 
 
 **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**  
 - HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/reports-and-publications/workplan/.
@@ -43,3 +44,6 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - *Please use the proposal.md profile for the proposal. Write it in your personal account's repository. After completion and before submission, refresh the contents in the class organization using "Fetch Upstream". Submit the link to the repository in the class organization.*
 - *Please make sure it is well formated and styled using Markdown.*
 - *We will randomly select a few proposals to walk through during the online session. If you are selected, you will be sharing your proposal and the class will provide feedback.*
+
+## References
+Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
