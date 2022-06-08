@@ -6,8 +6,10 @@
 ## Data Sources
 - https://github.com/Colsai/scott_data606/tree/main/Data_Sources
 
-## Table of Contents
-### Part 1: Proposal
+## Table of Contents   
+
+### PHASE I: Project Proposal & Planning:
+#### June 1, June 8, June 15	
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
@@ -16,7 +18,8 @@
 <th> Final Project Proposal:
 </table>
   
-### Part 2: Exploratory Data Analysis
+### PHASE II: Data Preparation & EDA
+#### June 22, June 29, July 6	
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
@@ -25,11 +28,15 @@
 <th> Final Project Proposal:
 </table>
 
-### Part 3: Modeling and Conclusions
+### PHASE III: Model Training & Deployment 
+#### July 13, July 20, July 27
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+</tr>
 <tr>
-<th> Final Project Proposal:
+<th> Initial Project Proposal:</th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
+</tr>  
 </table>
