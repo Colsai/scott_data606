@@ -32,12 +32,8 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 ### **3. What questions do you have in mind and would like to answer?** 
 - What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
-- Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)
-- How do we connect these outcomes to OIG's priority outcomes and larger mission?
-
-#### Priority Outcomes
-1. Minimizing risks to beneficiaries & 
-2. Safeguarding programs from improper payments and fraud. 
+- Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)?
+- How do we connect these outcomes to OIG's priority outcomes and larger mission (*Priority Outcomes: a) Minimizing risks to beneficiaries & b) Safeguarding programs from improper payments and fraud.*)?
 
 ### **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**  
 See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
@@ -46,20 +42,21 @@ See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsa
 - Projects (work plan items) and Reports scraped from HHS OIG website, FY2018 (October 2017), based on the government FY scheduling, to current. 
 - OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
  
-### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**  
+### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?** 
+#### Work Plan/Reports Data Elements:
 <table>
 <tr><th> Titles of work plans (as focus areas)</th><th> Data is included in the work plan</th></tr>
-<tr><th> Current status of work plans (Completed, Cancelled, In-Progress) </th><th> Data is included in the work plan</th></tr>
-<tr><th>Agency focus areas (CMS/FDA/CDC/etc.) </th><th>Included, but needs standardization/cleaning</th></tr>
+<tr><th> Current status of work plans (Completed, Cancelled, In-Progress) </th><th> Included, but needs standardization/cleaning</th></tr>
+<tr><th> Agency focus areas (CMS/FDA/CDC/etc.) </th><th>Included, but needs standardization/cleaning</th></tr>
 <tr><th> Expected date of completion for projects </th><th> Data is included in the work plan</th></tr>
 <tr><th> Summaries of work projects </th><th> Data is included in the work plan</th></tr>
-<tr><th> Summaries of reports </th><th> Data is included in the work plan</th></tr>
+<tr><th> Summaries of reports </th><th> Data not included in the work plan, separately scraped</th></tr>
 <tr><th> Status of items </th><th> Included, but needs standardization/cleaning</th></tr>
 </table>
   
-**From each of the reports, I'd also like to pull from the texts:**
+**From each of the reports/summaries, I'd also like to pull:**
 <table>
-  <tr><th>Locations of the analysis</th><th>Would need to be pulled from summaries</th></tr>
+  <tr><th> Locations of the analysis</th><th>Would need to be pulled from summaries</th></tr>
   <tr><th> Frequent topics/topic modeling</th><th> Unsupervised model for pulling topics</th></tr>
   <tr><th> Recoveries (in dollar amounts)</th><th>Stretch goal</th></tr>
 </table>
@@ -67,29 +64,30 @@ See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsa
 ### **7. What kinds of techniques/models do you plan to use (for example, clustering, NLP, ARIMA, etc.)?**  
 #### Techniques and Models:
 <table>
-  <tr><th>Text Analytics </th></tr>
+<tr><th>Text Analytics </th></tr>
 <tr><th> Unstructured NLP for analyzing frequent topics  </th></tr>
 <tr><th> Unsupervised text clustering </th></tr>
 <tr><th> Dashboard development </th></tr>
 </table>
 
 ### **8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**
-My biggest focus area here is providing insight into what the data say about OIG's current planned work, and past work.
+The main goal initially will be to prototype, clean, and try LDA on the dataset. My biggest focus area here is providing insight into what the data say about OIG's current planned work, and past work.
+
+My method of performance of the models will be to analyze whether extracted themes are logically clear, and then see whether paragraphs appear to match to their corresponding paragraphs. 
 
 ### **9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?**  
-I'm hoping to use this data to analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. 
+Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
 
-The ultimate value of this data is that it is somewhat novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
-
-<hr>
+<hr></hr>
 
 ## References
-<sub>1</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
+<sub>1</sub> Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
 
-“What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
+<sub>2</sub> February 2022 Medicaid & CHIP Enrollment Data Highlights | Medicaid. https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html. Accessed 12 June 2022.
 
-<sub>2 </sub>https://www.healthmanagement.com/services/government-programs-uninsured/medicare-program/ 
+<sub>3</sub> “Medicare Program Is the United State’s Single Largest Health Program.” Health Management Associates, https://www.healthmanagement.com/services/government-programs-uninsured/medicare-program/. Accessed 12 June 2022.
 
-https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html
+<sub>4</sub> “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
-https://www.pgpf.org/budget-basics/medicare#:~:text=Medicare%20accounts%20for%20a%20significant,last%20year%2C%20after%20Social%20Security.
+<sub>5</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
+
