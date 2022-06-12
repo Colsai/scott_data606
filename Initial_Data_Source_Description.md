@@ -1,6 +1,6 @@
 # Describing Data Sources
 ### An explanation of the work plan underlying data
-See: [[https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)](https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md)
+See: https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md
 
 - HHS OIG displays all public projects, which can be found at https://oig.hhs.gov/reports-and-publications/workplan/.
 - The primary challenge is in finding a way to scrape the data. I've initially scraped the paragraphs by writing an initial scraper: 
