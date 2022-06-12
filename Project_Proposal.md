@@ -9,7 +9,7 @@ This project aims at a textual analysis of the work plans and reports that HHS O
 
 <blockquote>
 <h4> What are work plan items? </h4>
-Work plan items are projects that HHS OIG declares to the public for work. Specifically, they are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>1</sub>"  
+Work plan items are projects that HHS OIG declares to the public for work. Specifically, they are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>4</sub>"  
 Each item is After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
 <p> 
 <p> However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
@@ -22,8 +22,8 @@ This oversight is particularly focused on the Medicare and Medicaid programs.
 <blockquote>
 <h4> In terms of the scope of these programs: </h4>
 <ul>
-<li>Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures).</li>
-<li>An additional 87 million US citizens are enrolled in Medicaid/CHIP (Children's Health Insurance Program). In 2020, Medicaid expenditures equaled $671.2 billion (16% of total national health expenditures).</li>
+<li>Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program<sub>3</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures) <sub>1</sub>.</li>
+<li>An additional 87 million US citizens are enrolled in Medicaid/CHIP (Children's Health Insurance Program)<sub>2</sub>. In 2020, Medicaid expenditures equaled $671.2 billion (16% of total national health expenditures)<sub>1</sub> .</li>
 <ul>
 </blockquote>
 
@@ -39,8 +39,11 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
 
 ### **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
-- Projects (work plan items) and Reports scraped from HHS OIG website, FY2018 (October 2017), based on the government FY scheduling, to current. 
-- OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
+- Scope: OIG's work across the United States (work scope includes DC/Puerto Rico), Time Range: FY2018 (starting 10/17) to June 2022.
+- All public OIG **Projects** (work plan items) and their connected **reports**
+- Projects defined as: public audits and evaluations, which are performed by separate entities within OIG.
+- Reports defined as: reports written after completion of specific analysis performed by a work plan project item.
+- Excludes specific or individual investigative actions/arrests (Offive of Investigation data not included)
  
 ### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?** 
 #### Work Plan/Reports Data Elements:
@@ -90,4 +93,3 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
 <sub>4</sub> “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
 <sub>5</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
-
