@@ -1,8 +1,8 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
-# DATA606: Protecting Modern US Healthcare
-## Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
+# DATA606: Public Work to Protect US Health Outcomes
+## An analysis/Modeling of HHS OIG's projects through DHHS OIG Work Plans & Reports, FY2018-Present
 
-### **Project Focus Area**  
+### **Project Focus**  
 The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse.  
   
 This project aims at a textual analysis of the work plans and reports that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp)
