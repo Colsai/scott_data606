@@ -1,23 +1,31 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # DATA606: Protecting Modern US Healthcare
-### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
+## Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 
 ### **1. What is your issue of interest (provide sufficient background information)?**  
-The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse. This oversight is particularly focused on the Medicare and Medicaid programs. In terms of teh scope of these programs:
-- Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures).
-- An additional 87 million US citizens are enrolled in Medicaid/CHIP (Children's Health Insurance Program). In 2020, Medicaid expenditures equaled $671.2 billion (16% of total national health expenditures).
+The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse.  
+  
+This project aims at a textual analysis of the work plans and reports that HHS OIG has produced from FY2018-present.
 
-With a combination of investigators, auditors, and agents, HHS OIG provides wide-ranging oversight to protect against misuses of these funds. This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
-
-#### What are work plan items?
-
-Work plan items are  projects that HHS OIG declares to the public for work. Specifically, they are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>1</sub>"  Each item is After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
-
-However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
-
+<blockquote>
+ <h3> What are work plan items? </h3>
+Work plan items are projects that HHS OIG declares to the public for work. Specifically, they are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>1</sub>"  
+Each item is After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
+<p> 
+<p> However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
+</blockquote>
+ 
 ### **2. Why is this issue important to you and/or to others?**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.   
+
+This oversight is particularly focused on the Medicare and Medicaid programs. In terms of the scope of these programs:
+
+- *Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures).*
+- *An additional 87 million US citizens are enrolled in Medicaid/CHIP (Children's Health Insurance Program). In 2020, Medicaid expenditures equaled $671.2 billion (16% of total national health expenditures).*
+
 - *The work plan can be found at: https://oig.hhs.gov/reports-and-publications/workplan/index.asp.*
+
+With a combination of investigators, auditors, and agents, HHS OIG provides wide-ranging oversight to protect against misuses of these funds. This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
 
 There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations of people (elderly, low-income, minority groups, all which may be disproportionately affected by fraud/waste/abuse). However, the current work plan that provides data on focus areas is difficult to navigate, and is largely unstructured. 
 
@@ -25,7 +33,8 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - What are some themes and trends we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
 - How do we connect these outcomes to OIG's priority outcomes?
-*Priority Outcomes*
+
+#### *Priority Outcomes*
 1. Minimizing risks to beneficiaries & 
 2. Safeguarding programs from improper payments and fraud. 
 - Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)
@@ -57,7 +66,9 @@ The major issue with this data is that there is a lot of cleanup and standardiza
 - Projects (work plan items) and Reports scraped from HHS OIG website, 2017-Current. OIG's work stretches across the US, and the scope of the work here are audits and evaluations, which are performed by separate entities within OIG.
  
 ### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?**  
-- Titles of work plans (as focus areas)
+<table>
+ <tr> Titles of work plans (as focus areas) </tr>
+</table>
 - Current status of work plans (Completed, Cancelled, In-Progress)
 - Agency focus areas (CMS/FDA/CDC/etc.)
 - Expected date of completion for projects
@@ -85,9 +96,6 @@ I'm hoping to use this data to analyze and provide a holistic look of most-frequ
 The ultimate value of this data is that it is somewhat novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
 
 <hr>
-- *Please use the proposal.md profile for the proposal. Write it in your personal account's repository. After completion and before submission, refresh the contents in the class organization using "Fetch Upstream". Submit the link to the repository in the class organization.*
-- *Please make sure it is well formated and styled using Markdown.*
-- *We will randomly select a few proposals to walk through during the online session. If you are selected, you will be sharing your proposal and the class will provide feedback.*
 
 ## References
 <sub>1</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
