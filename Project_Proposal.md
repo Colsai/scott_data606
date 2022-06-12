@@ -4,7 +4,9 @@
 <hr/>
 
 ### **1. What is your issue of interest (provide sufficient background information)?**  
-I'm interested in understanding more about the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports created. 
+The US Department of Health and Human Services- Office of Inspector General undertakes valuable work to protect the American public against fraud, waste and abuse, particularly with regards to Medicare and Medicaid.  Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program<sub>1</sub>
+
+I'm interested in dissecting the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports created. 
 
 Work plan items are essentially projects that HHS OIG declares for work. After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
 
@@ -88,3 +90,5 @@ The ultimate value of this data is that it is somewhat novel. As the coordinator
 Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
 
 “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
+
+<sub>https://www.healthmanagement.com/services/government-programs-uninsured/medicare-program/ </sub>
