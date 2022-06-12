@@ -1,14 +1,16 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # DATA606: Protecting Modern US Healthcare
-## Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
+#### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 <hr/>
 
 ### **1. What is your issue of interest (provide sufficient background information)?**  
-The US Department of Health and Human Services- Office of Inspector General undertakes valuable work to protect the American public against fraud, waste and abuse, particularly with regards to Medicare and Medicaid.  Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program<sub>1</sub>
+The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse, particularly with regards to Medicare and Medicaid.  Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>.
 
-I'm interested in dissecting the Department of Health and Human Services- Office of Inspector General's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports created. 
+This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
 
-Work plan items are essentially projects that HHS OIG declares for work. After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
+#### What are work plan items?
+
+Work plan items are  projects that HHS OIG declares to the public for work. Specifically, they are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>1</sub>"  Each item is After these items are completed, a formal report is drafted and presented to the public. However, these reports only exist in website and .pdf form, making them difficult for larger analysis.
 
 However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.
 
@@ -87,7 +89,7 @@ The ultimate value of this data is that it is somewhat novel. As the coordinator
 - *We will randomly select a few proposals to walk through during the online session. If you are selected, you will be sharing your proposal and the class will provide feedback.*
 
 ## References
-Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
+<sub>1</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
 
 “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
