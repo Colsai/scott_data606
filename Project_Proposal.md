@@ -2,7 +2,7 @@
 # DATA606: Protecting Modern US Healthcare
 ## Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 
-### **1. What is your issue of interest (provide sufficient background information)?**  
+### **Project Focus Area**  
 The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse.  
   
 This project aims at a textual analysis of the work plans and reports that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp)
@@ -15,7 +15,7 @@ Each item is After these items are completed, a formal report is drafted and pre
 <p> However, these work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
  
-### **2. Why is this issue important to you and/or to others?**  
+### **2. Importance and Relevance of Analysis **  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.   
 
 This oversight is particularly focused on the Medicare and Medicaid programs. 
@@ -29,23 +29,23 @@ This oversight is particularly focused on the Medicare and Medicaid programs.
 
 There are many avenues for fraud, waste, and abuse, and an extensive analysis of the projects over the past three years provides confidence to medical professionals and the public that HHS OIG is continuing to protect vulnerable populations of people (elderly, low-income, minority groups, all which may be disproportionately affected by fraud/waste/abuse). However, the current work plan that provides data on focus areas is difficult to navigate, and is largely unstructured. This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
 
-### **3. What questions do you have in mind and would like to answer?** 
+### **3. Addressed Questions within Project Scope** 
 - What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking? (Locations, focus areas, topics)
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
 - Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)?
 - How do we connect these outcomes to OIG's priority outcomes and larger mission (*Priority Outcomes: a) Minimizing risks to beneficiaries & b) Safeguarding programs from improper payments and fraud.*)?
 
-### **4. Where do you get the data to analyze and help answer your questions (creditability of source, quality of data, size of data, attributes of data. etc.)?**  
-See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
+### **4. Data Sources and Explanation**  
+- Data sources and explanation can be found at: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
 
-### **5. What will be your unit of analysis (for example, patient, organization, or country)? Roughly how many units (observations) do you expect to analyze?**  
+### **5. Project Units of Analysis**  
 - Scope: OIG's work across the United States (work scope includes DC/Puerto Rico), Time Range: FY2018 (starting 10/17) to June 2022.
 - All public OIG **Projects** (work plan items) and their connected **reports**
 - Projects defined as: public audits and evaluations, which are performed by separate entities within OIG.
 - Reports defined as: reports written after completion of specific analysis performed by a work plan project item.
 - Excludes specific or individual investigative actions/arrests (Offive of Investigation data not included)
  
-### **6. What variables/measures do you plan to use in your analysis (variables should be tied to the questions in #3)?** 
+### **6. Variables and Measures Considered** 
 #### Work Plan/Reports Data Elements:
 <table>
 <tr><th> Titles of work plans (as focus areas)</th><th> Data is included in the work plan</th></tr>
@@ -64,7 +64,7 @@ See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsa
   <tr><th> Recoveries (in dollar amounts)</th><th>Stretch goal</th></tr>
 </table>
 
-### **7. What kinds of techniques/models do you plan to use (for example, clustering, NLP, ARIMA, etc.)?**  
+### **7. Techniques/models Planned for Project Use(for example, clustering, NLP, ARIMA, etc.)?**  
 #### Techniques and Models:
 <table>
 <tr><th>Text Analytics </th></tr>
@@ -73,12 +73,12 @@ See: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsa
 <tr><th> Dashboard development </th></tr>
 </table>
 
-### **8. How do you plan to develop/apply ML and how you evaluate/compare the performance of the models?**
+### **8. Initial Schedule and Usage of ML within Project**
 The main goal initially will be to prototype, clean, and try LDA on the dataset. My biggest focus area here is providing insight into what the data say about OIG's current planned work, and past work.
 
 My method of performance of the models will be to analyze whether extracted themes are logically clear, and then see whether paragraphs appear to match to their corresponding paragraphs. 
 
-### **9. What outcomes do you intend to achieve (better understanding of problems, tools to help solve problems, predictive analytics with practicle applications, etc)?**  
+### **9. Expected Outcomes**  
 Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
 
 <hr></hr>
