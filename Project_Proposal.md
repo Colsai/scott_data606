@@ -2,11 +2,12 @@
 # DATA606: Protecting Modern US Healthcare
 ### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
 <hr/>
-
 ### **1. What is your issue of interest (provide sufficient background information)?**  
-The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse, particularly with regards to Medicare and Medicaid.  Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>.
+The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse. This oversight is particularly focused on the Medicare and Medicaid programs. In terms of teh scope of these programs:
+- Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures).
+- An additional 87 million US citizens are enrolled in Medicaid/CHIP (Children's Health Insurance Program). In 2020, Medicaid expenditures equaled $671.2 billion (16% of total national health expenditures).
 
-This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
+With a combination of investigators, auditors, and agents, HHS OIG provides wide-ranging oversight to protect against misuses of these funds. This project aims to dissect the HHS OIG's historical work and work patterns, by utilizing text analytics on the OIG work plan, work plan items, and the subsequent reports. 
 
 #### What are work plan items?
 
@@ -93,4 +94,8 @@ The ultimate value of this data is that it is somewhat novel. As the coordinator
 
 “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
-<sub>https://www.healthmanagement.com/services/government-programs-uninsured/medicare-program/ </sub>
+<sub>2 </sub>https://www.healthmanagement.com/services/government-programs-uninsured/medicare-program/ 
+
+https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html
+
+https://www.pgpf.org/budget-basics/medicare#:~:text=Medicare%20accounts%20for%20a%20significant,last%20year%2C%20after%20Social%20Security.
