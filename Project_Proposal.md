@@ -1,7 +1,7 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # DATA606: Protecting Modern US Healthcare
 ### Analysis and Modeling of OIG's projects through DHHS OIG Work Plans and Reports
-<hr/>  
+
 ### **1. What is your issue of interest (provide sufficient background information)?**  
 The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse. This oversight is particularly focused on the Medicare and Medicaid programs. In terms of teh scope of these programs:
 - Medicare alone is the United States' largest health care program- over 60 million American beneficiaries utilize the program <sub>1</sub>. This program cost $829.5 billion dollars (20% of total national health expenditures).
