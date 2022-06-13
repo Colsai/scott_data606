@@ -16,7 +16,7 @@
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 <tr>
   <th> Final Project Proposal: </th>
-<th> LINK </th>
+<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 </table>
   
 ### PHASE II: Data Preparation & EDA
