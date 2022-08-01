@@ -31,8 +31,7 @@
 <th> LINK </th>
 </tr>
 </table>
-![image](https://user-images.githubusercontent.com/70355052/178854468-03412abd-b543-4aea-8fa4-a40c6af80000.png)
-
+![image](https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png)
 ### PHASE III: Model Training & Deployment 
 #### July 13, July 20, July 27
 <table>
