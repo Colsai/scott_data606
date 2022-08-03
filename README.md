@@ -23,8 +23,8 @@
 #### June 22, June 29, July 6	
 <table>
 <tr>
-<th> STEP </th> 
-<th> LINK </th>
+<th> EDA </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb </th>
 </tr>
 <tr>
 <th> STEP </th> 
@@ -36,12 +36,12 @@
 #### July 13, July 20, July 27
 <table>
 <tr>
-<th> STEP </th> 
-<th> LINK </th>
+<th> Topic Modeling Reports </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Reports_2.ipynb </th>
 </tr>
 <tr>
-<th> STEP </th> 
-<th> LINK </th>
+<th> Topic Modeling Work Plans </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Workplans_1.ipynb </th>
 </tr>
 </table>
 
