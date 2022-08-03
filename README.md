@@ -6,6 +6,9 @@
 ## Data Sources
 - https://github.com/Colsai/scott_data606/tree/main/Data_Sources
 
+## Data Model
+![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)
+
 ## Table of Contents   
 
 ### PHASE I: Project Proposal & Planning:
@@ -27,8 +30,6 @@
 <th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb </th>
 </tr>
 <tr>
-<th> STEP </th> 
-<th> LINK </th>
 </tr>
 </table>
 
@@ -58,5 +59,4 @@
 </tr>
 </table>
 
-### Appendix
-![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)
+
