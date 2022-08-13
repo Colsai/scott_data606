@@ -55,7 +55,16 @@
 
 ### Introduction
 
-OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve.
+
+
+
+
+![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
+# The Role of HHS OIG: Public Work to Protect US Health Outcomes
+## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
+
+### **Project Focus**  
+OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve. They outline the primary scope of their work as:
 
 • Safeguarding the Medicare Trust Funds  
 • Strengthening Medicaid protections against fraud, waste, and abuse  
@@ -67,13 +76,6 @@ OIG's mission is to provide objective oversight to promote the economy, efficien
 • Ensuring HHS managed care and new healthcare models produce value  
 • Identifying opportunities to lower prescription drug spending for patients and programs 
 
-
-
-![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
-# The Role of HHS OIG: Public Work to Protect US Health Outcomes
-## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
-
-### **Project Focus**  
 The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse.  
   
 This project aims at a textual analysis of the work plans and reports that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp)
