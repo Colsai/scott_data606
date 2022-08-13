@@ -58,7 +58,7 @@
 <th>  </th>
 </tr>
 </table>
-
+<hr>
 ### Introduction
 
 OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve.
