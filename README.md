@@ -40,11 +40,15 @@
 </table>
 
 ### PHASE IV: Presentation
-#### July 27--
+#### July 27- August 2022
 <table>
 <tr>
 <th> Final Presentation </th> 
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
+</tr>
+  <tr>
+<th> Video Presentation </th> 
+<th></th>
 </tr>
 </table>
 <hr></hr>
