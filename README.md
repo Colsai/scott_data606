@@ -66,15 +66,19 @@
 ### **Project Focus**  
 OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve. They outline the primary scope of their work as:
 
-• Safeguarding the Medicare Trust Funds  
-• Strengthening Medicaid protections against fraud, waste, and abuse  
-• Protecting beneficiaries from prescription drug abuse, including opioids  
-• Ensuring health and safety for children served by HHS programs  
-• Combatting cybersecurity threats within HHS and healthcare  
-• Promoting patient safety and accuracy of payments in home and community settings
-• Leveraging technology as it intersects with HHS programs  
-• Ensuring HHS managed care and new healthcare models produce value  
-• Identifying opportunities to lower prescription drug spending for patients and programs 
+<blockquote>
+<ul>
+<li> Safeguarding the Medicare Trust Funds  
+<li> Strengthening Medicaid protections against fraud, waste, and abuse  
+<li> Protecting beneficiaries from prescription drug abuse, including opioids  
+<li> Ensuring health and safety for children served by HHS programs  
+<li> Combatting cybersecurity threats within HHS and healthcare  
+<li> Promoting patient safety and accuracy of payments in home and community settings
+<li> Leveraging technology as it intersects with HHS programs  
+<li> Ensuring HHS managed care and new healthcare models produce value  
+<li> Identifying opportunities to lower prescription drug spending for patients and programs 
+</ul>
+</blockquote>
 
 The US Department of Health and Human Services- Office of Inspector General (HHS OIG) undertakes valuable work to provide oversight on the larger Department of Health and Human Services in order to protect the American public against fraud, waste and abuse.  
   
