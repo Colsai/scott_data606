@@ -5,7 +5,7 @@
 ## Table of Contents   
 
 ### PHASE I: Project Proposal & Planning:
-#### June 1, June 8, June 15	
+#### *June 1, June 8, June 15	*
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
@@ -16,7 +16,7 @@
 </table>
   
 ### PHASE II: Data Preparation & EDA
-#### June 22, June 29, July 6	
+#### *June 22, June 29, July 6	*
 <table>
 <tr>
 <th> EDA </th> 
@@ -27,7 +27,7 @@
 </table>
 
 ### PHASE III: Model Training & Deployment 
-#### July 13, July 20, July 27
+#### *July 13, July 20, July 27*
 <table>
 <tr>
 <th> Topic Modeling Reports </th> 
@@ -40,7 +40,7 @@
 </table>
 
 ### PHASE IV: Presentation
-#### July 27- August 2022
+#### *July 27- August 2022*
 <table>
 <tr>
 <th> Final Presentation </th> 
