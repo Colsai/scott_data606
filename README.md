@@ -60,3 +60,24 @@
 </table>
 
 
+
+### Introduction
+
+OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve.
+
+• Safeguarding the Medicare Trust Funds  
+• Strengthening Medicaid protections against fraud, waste, and abuse  
+• Protecting beneficiaries from prescription drug abuse, including opioids  
+• Ensuring health and safety for children served by HHS programs  
+• Combatting cybersecurity threats within HHS and healthcare  
+• Promoting patient safety and accuracy of payments in home and community settings
+• Leveraging technology as it intersects with HHS programs  
+• Ensuring HHS managed care and new healthcare models produce value  
+• Identifying opportunities to lower prescription drug spending for patients and programs 
+
+### Questions
+1. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
+2. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
+3. Are there any topics that appear to be underrepresented from the reports and data?
+
+
