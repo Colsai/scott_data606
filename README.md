@@ -1,6 +1,6 @@
 # HHS OIG: Work Products and Reports: Topic Modeling
 ### Scott Hirabayashi | Summer 2022 (June-August)
-### Topic Modeling Work Scope for HHS OIG (2018-2022)
+### Topic Modeling For Work Scope for HHS OIG (2018-2022)
 
 ## Table of Contents   
 
