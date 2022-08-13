@@ -1,7 +1,6 @@
 # HHS OIG: Work Products and Reports: Topic Modeling
+### Scott Hirabayashi | Summer 2022 (June-August)
 ### A direct look at the work plans and reports from HHS OIG
-- Summer 2022 (June-August)
-- Scott Hirabayashi
 
 ## Data Sources
 - https://github.com/Colsai/scott_data606/tree/main/Data_Sources
