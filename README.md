@@ -43,12 +43,8 @@
 #### July 27--
 <table>
 <tr>
-<th> Presentation Draft </th> 
-<th> </th>
-</tr>
-<tr>
 <th> Final Presentation </th> 
-<th>  </th>
+<th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
 </tr>
 </table>
 <hr></hr>
