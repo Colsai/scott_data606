@@ -6,9 +6,6 @@
 ## Data Sources
 - https://github.com/Colsai/scott_data606/tree/main/Data_Sources
 
-## Data Model
-![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)
-
 ## Table of Contents   
 
 ### PHASE I: Project Proposal & Planning:
@@ -58,7 +55,8 @@
 <th>  </th>
 </tr>
 </table>
-<hr>
+<hr></hr>
+
 ### Introduction
 
 OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve.
@@ -73,10 +71,7 @@ OIG's mission is to provide objective oversight to promote the economy, efficien
 • Ensuring HHS managed care and new healthcare models produce value  
 • Identifying opportunities to lower prescription drug spending for patients and programs 
 
-### Questions
-1. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
-2. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
-3. Are there any topics that appear to be underrepresented from the reports and data?
+
 
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # The Role of HHS OIG: Public Work to Protect US Health Outcomes
@@ -114,6 +109,11 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 - Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
 - Do specific types of audits/investigations yield the best ROI? (ROI data and repayment data is included in the unstructured text)?
 - How do we connect these outcomes to OIG's priority outcomes and larger mission (*Priority Outcomes: a) Minimizing risks to beneficiaries & b) Safeguarding programs from improper payments and fraud.*)?
+  
+  ### Additional Questions
+1. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
+2. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
+3. Are there any topics that appear to be underrepresented from the reports and data?
 
 ### 4. Data Sources and Explanation 
 - Data sources and explanation can be found at: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
@@ -161,6 +161,9 @@ My method of performance of the models will be to analyze whether extracted them
 ### 9. Expected Outcomes
 Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
 
+## Data Model
+![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
+  
 <hr></hr>
 
 ## References
