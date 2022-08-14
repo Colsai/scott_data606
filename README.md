@@ -6,15 +6,17 @@
 
 ## **Table of Contents**
 
-* [1. Project Introduction](#introduction)  
+* [1. Project Links & Introduction](#introduction)  
 
-* [2. Data Source and Web Scraping](#data-source--scraping)
+* [2. Data Source and Web Scraping](#data-source-and-scraping)
 
-* [3. Exploratory Data Analysis](#EDA)  
+* [3. Exploratory Data Analysis](#eda-and-dataset-analysis)  
 
-* [4. Modeling](#Modeling)  
+* [4. Modeling](#topic-modeling)  
 
 * [5. Project Conclusions](#conclusions)  
+
+* [6. References](#references)  
 
 <hr></hr>
 
