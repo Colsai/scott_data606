@@ -86,10 +86,29 @@ Note:These are summaries of a larger report and communication log that OIG also 
   
   
 Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
-
   
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
-  
+ 
+After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
+
+1. Items were tokenized using Regexptokenizer, which removed punctuation within summaries.
+```
+regex_tokenizer = RegexpTokenizer(r'\w+')
+```
+
+2. Work plan/report summaries had stopwords removed: This project used the base NLTK English stopwords list, but additionally included several other words ('on', 'or', etc., and domain-specific words, such as 'oig', 'hhs', as these words did not provide any helpful information for the scope of the topic modeling that followed.
+
+```
+tokenized_sums = [[i for i in regex_tokenizer.tokenize(sent) if i not in stopwords] 
+                  for sent in wp_init_srs]
+```
+
+3. A simple Regex Stemmer was used. Because of many acronyms and domain-specific words, initial tests of modeling with more-restrictive stemmers performed more poorly for topic modeling.
+
+```
+Reg_stemmer = RegexpStemmer("ing$|s$|ies$")
+tokenized_stemmed_sums = [[Reg_stemmer.stem(word) for word in sent] for sent in tokenized_sums]
+```
   
 # EDA and Dataset Analysis
 <table>
