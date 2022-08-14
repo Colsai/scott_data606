@@ -198,7 +198,7 @@ BERTopic is a topic modeling technique that leverages BERT embeddings and a clas
   
   
   
-## References
+# References
 <sub>1</sub> Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
 
 <sub>2</sub> February 2022 Medicaid & CHIP Enrollment Data Highlights | Medicaid. https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html. Accessed 12 June 2022.
