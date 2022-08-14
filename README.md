@@ -1,5 +1,5 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
-# The Role of HHS OIG: Public Work to Protect US Health Outcomes
+# Modeling the Role of HHS OIG: Public Work to Protect US Health Outcomes
 ## The Value of Topic Modeling For Work Scope for HHS OIG (2018-2022)
 ### Scott Hirabayashi (under the supervision of Dr. Jay Wang | Summer 2022 (June-August)
 <hr></hr>
