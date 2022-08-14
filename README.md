@@ -4,12 +4,13 @@
 ### Scott Hirabayashi (under the supervision of Dr. Jay Wang | Summer 2022 (June-August)
 <hr></hr>
 
-## Table of Contents
-1. Project Introduction
-2. Source Data and Web Scraping
-3. Exploratory Data Analysis
-4. Modeling
-5. Project Conclusions
+## **Table of Contents**
+
+[1. Project Introduction] (#introduction)
+[2. Source Data and Web Scraping] (#sourcedata)
+[3. Exploratory Data Analysis] (#EDA)
+[4. Modeling] (#Modeling)
+[5. Project Conclusions] (Conclusions)
 
 <hr></hr>
 
