@@ -5,16 +5,15 @@
 <hr></hr>
 
 ## Table of Contents
-- Project Introduction
-- Source Data and Web Scraping
-- Exploratory Data Analysis
-- Modeling
-- Project Conclusions
+1. Project Introduction
+2. Source Data and Web Scraping
+3. Exploratory Data Analysis
+4. Modeling
+5. Project Conclusions
 
+### Introduction
 
-## Project Links
-
-### PHASE I: Project Proposal & Planning:
+## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
@@ -23,46 +22,6 @@
 <th> Final Project Proposal: </th>
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 </table>
-  
-### PHASE II: Data Preparation & EDA
-<table>
-<tr>
-<th> EDA </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb </th>
-</tr>
-<tr>
-</tr>
-</table>
-
-### PHASE III: Model Training & Deployment 
-<i> July 13, July 20, July 27 </i>
-<table>
-<tr>
-<th> Topic Modeling Reports </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Reports_2.ipynb </th>
-</tr>
-<tr>
-<th> Topic Modeling Work Plans </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Workplans_1.ipynb </th>
-</tr>
-</table>
-
-### PHASE IV: Presentation
-<table>
-<tr>
-<th> Final Presentation </th> 
-<th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
-</tr>
-<tr>
-<th> Video Presentation </th> 
-<th></th>
-</tr>
-</table>
-<hr></hr>
-
-### Introduction
-
-## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 
 ### **Project Focus**  
 OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve. They outline the primary scope of their work as:
@@ -187,13 +146,26 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
   
   
 ## Topic Modeling
-  
+<i> July 13, July 20, July 27 </i>
+<table>
+<tr>
+<th> Topic Modeling Reports </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Reports_2.ipynb </th>
+</tr>
+<tr>
+<th> Topic Modeling Work Plans </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Workplans_1.ipynb </th>
+</tr>
+</table>  
   
   
   
   
 ## Conclusions 
-  
+<th> Final Presentation </th> 
+<th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
+</tr>
+<tr>  
   
   
   
