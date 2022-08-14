@@ -18,10 +18,7 @@
 ## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 <table>
 <tr>
-<th> Initial Project Proposal:</th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
-<tr>
-<th> Final Project Proposal: </th>
+<th> Initial/Final Project Proposal</th> 
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 </table>
 
