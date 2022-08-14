@@ -1,11 +1,20 @@
-# HHS OIG: Work Products and Reports: Topic Modeling
-### Scott Hirabayashi | Summer 2022 (June-August)
-### Topic Modeling For Work Scope for HHS OIG (2018-2022)
+![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
+# The Role of HHS OIG: Public Work to Protect US Health Outcomes
+## The Value of Topic Modeling For Work Scope for HHS OIG (2018-2022)
+### Scott Hirabayashi (under the supervision of Dr. Jay Wang | Summer 2022 (June-August)
+<hr></hr>
 
-## Table of Contents   
+## Table of Contents
+- Project Introduction
+- Source Data and Web Scraping
+- Exploratory Data Analysis
+- Modeling
+- Project Conclusions
+
+
+## Project Links
 
 ### PHASE I: Project Proposal & Planning:
-<i> June 1, June 8, June 15	</i>
 <table>
 <tr>
 <th> Initial Project Proposal:</th> 
@@ -16,7 +25,6 @@
 </table>
   
 ### PHASE II: Data Preparation & EDA
-<i> June 22, June 29, July 6 </i>
 <table>
 <tr>
 <th> EDA </th> 
@@ -40,7 +48,6 @@
 </table>
 
 ### PHASE IV: Presentation
-<i> July 27- August 2022 </i>
 <table>
 <tr>
 <th> Final Presentation </th> 
@@ -55,12 +62,6 @@
 
 ### Introduction
 
-
-
-
-
-![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
-# The Role of HHS OIG: Public Work to Protect US Health Outcomes
 ## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 
 ### **Project Focus**  
@@ -168,6 +169,35 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
   
 <hr></hr>
 
+  
+## Data Source/ Scraping
+  
+  
+  
+## EDA
+
+  
+  
+  
+## Topic Modeling
+  
+  
+  
+  
+  
+## Conclusions 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ## References
 <sub>1</sub> Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
 
@@ -178,4 +208,3 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
 <sub>4</sub> “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
 <sub>5</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
-
