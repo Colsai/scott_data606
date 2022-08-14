@@ -11,7 +11,9 @@
 4. Modeling
 5. Project Conclusions
 
-### Introduction
+<hr></hr>
+
+## Project Introduction
 
 ## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 <table>
@@ -77,6 +79,27 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 2. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
 3. Are there any topics that appear to be underrepresented from the reports and data?
 
+
+## Data Model
+![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
+  
+<hr></hr>
+
+  
+## Data Source/ Scraping
+  
+  
+  
+## EDA
+<table>
+<tr>
+<th> EDA </th> 
+<th> [https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb</th>
+</tr>
+<tr>
+</tr>
+</table>
+
 ### 4. Data Sources and Explanation 
 - Data sources and explanation can be found at: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
 
@@ -121,32 +144,9 @@ The main goal initially will be to prototype, clean, and try LDA on the dataset.
 My method of performance of the models will be to analyze whether extracted themes are logically clear, and then see whether paragraphs appear to match to their corresponding paragraphs. 
 
 ### 9. Expected Outcomes
-Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.
-
-## Data Model
-![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
-  
-<hr></hr>
-
-  
-## Data Source/ Scraping
-  
-  
-  
-## EDA
-<table>
-<tr>
-<th> EDA </th> 
-<th> [https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb</th>
-</tr>
-<tr>
-</tr>
-</table>
-  
-  
+Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.  
   
 ## Topic Modeling
-<i> July 13, July 20, July 27 </i>
 <table>
 <tr>
 <th> Topic Modeling Reports </th> 
@@ -158,6 +158,13 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
 </tr>
 </table>  
   
+Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
+### Latent Dirichlet Allocation (LDA):
+The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect)
+  
+### BERTopic (LDA): 
+BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. (Grootendorst)
+
   
   
   
@@ -166,7 +173,6 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
 </tr>
 <tr>  
-  
   
   
   
