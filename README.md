@@ -175,7 +175,14 @@ Analyze and provide a holistic look of most-frequent topics of audits and evalua
   
   
 ## EDA
-
+<table>
+<tr>
+<th> EDA </th> 
+<th> [https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb</th>
+</tr>
+<tr>
+</tr>
+</table>
   
   
   
