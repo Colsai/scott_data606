@@ -6,7 +6,7 @@
 
 ## **Table of Contents**
 
-* [1. Project Introduction](#Introduction)  
+* [1. Project Introduction](#introduction)  
 
 * [2. Data Source and Web Scraping](#data-source--scraping)
 
@@ -18,7 +18,7 @@
 
 <hr></hr>
 
-## Introduction
+# Introduction
 ![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
 <i>An overall picture of the project</i>
 
@@ -85,7 +85,7 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 <hr></hr>
 
   
-## Data Source and Scraping
+# Data Source and Scraping
 The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. 
   
 <blockquote>
@@ -103,7 +103,7 @@ Work Plan Scraping was straightforward- scraped the summaries, and any links to 
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
   
   
-## EDA
+# EDA and Dataset Analysis
 <table>
 <tr>
 <th> EDA </th> 
@@ -159,7 +159,7 @@ My method of performance of the models will be to analyze whether extracted them
 ### 9. Expected Outcomes
 Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.  
   
-## Topic Modeling
+# Topic Modeling
 <table>
 <tr>
 <th> Topic Modeling Reports </th> 
