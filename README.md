@@ -109,57 +109,35 @@ Work Plan Scraping was straightforward- scraped the summaries, and any links to 
 <table>
 <tr>
 <th> EDA </th> 
-<th> [https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/Initial_EDA.ipynb</th>
+<th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/OIGworkplan_Initial_EDA.ipynb </th>
 </tr>
 <tr>
 </tr>
 </table>
 
-### 4. Data Sources and Explanation 
-- Data sources and explanation can be found at: [https://github.com/Colsai/scott_data606/new/main](https://github.com/Colsai/scott_data606/blob/main/Initial_Data_Source_Description.md)
+After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves.
 
-### 5. Project Units of Analysis
-- Scope: OIG's work across the United States (work scope includes DC/Puerto Rico), Time Range: FY2018 (starting 10/17) to June 2022.
+## General Information on Work Plan and Reports Datasets:
+- Scope: OIG's work across the United States (work scope includes DC/Puerto Rico), Time Range: FY2018 (starting 10/17) to June 2022. The work plan is updated monthly.
 - All public OIG **Projects** (work plan items) and their connected **reports**
 - Projects defined as: public audits and evaluations, which are performed by separate entities within OIG.
 - Reports defined as: reports written after completion of specific analysis performed by a work plan project item.
 - Excludes specific or individual investigative actions/arrests (Offive of Investigation data not included)
- 
-### 6. Variables and Measures Considered
-#### Work Plan/Reports Data Elements:
-<table>
-<tr><th> Titles of work plans (as focus areas)</th><th> Data is included in the work plan</th></tr>
-<tr><th> Current status of work plans (Completed, Cancelled, In-Progress) </th><th> Included, but needs standardization/cleaning</th></tr>
-<tr><th> Agency focus areas (CMS/FDA/CDC/etc.) </th><th>Included, but needs standardization/cleaning</th></tr>
-<tr><th> Expected date of completion for projects </th><th> Data is included in the work plan</th></tr>
-<tr><th> Summaries of work projects </th><th> Data is included in the work plan</th></tr>
-<tr><th> Summaries of reports </th><th> Data not included in the work plan, separately scraped</th></tr>
-<tr><th> Status of items </th><th> Included, but needs standardization/cleaning</th></tr>
-</table>
-  
-**From each of the reports/summaries, I'd also like to pull:**
-<table>
-  <tr><th> Locations of the analysis</th><th>Would need to be pulled from summaries</th></tr>
-  <tr><th> Frequent topics/topic modeling</th><th> Unsupervised model for pulling topics</th></tr>
-  <tr><th> Recoveries (in dollar amounts)</th><th>Stretch goal</th></tr>
-</table>
 
-### 7. Techniques/models Planned for Project Use(for example, clustering, NLP, ARIMA, etc.)?
-#### Techniques and Models:
-<table>
-<tr><th>Text Analytics </th></tr>
-<tr><th> Unstructured NLP for analyzing frequent topics  </th></tr>
-<tr><th> Unsupervised text clustering </th></tr>
-<tr><th> Dashboard development </th></tr>
-</table>
+## EDA on Work Scope
+- A majority of work was specifically Centers for Medicare and Medicaid work (415 work plans out of 655).
+- OAS work (and therefore, audits), made up about 65% of the total work (423 work plans); OEI work (evaluations and inspections), made up the other 35%. 
+- As work plans can recur (and repeat year-to-year), there were duplicates. However, as language and scope of these projects can change year-to-year, duplicates were not removed to retain actual work done.
 
-### 8. Initial Schedule and Usage of ML within Project
-The main goal initially will be to prototype, clean, and try LDA on the dataset. My biggest focus area here is providing insight into what the data say about OIG's current planned work, and past work.
+## EDA on Texts
+- Between audits and evaluations, the actual length of texts was similar, as shown:
+  ![image](https://user-images.githubusercontent.com/70355052/184555866-cf909c2b-6d72-4612-85b2-0dcc41a85d6d.png)
+- Overall, when looking through the tokenized work plans and reports, obvious similarities were present in the scope of analysis:
+  <i><center> Top 30 Words, Work Plans </center></i>
+![image](https://user-images.githubusercontent.com/70355052/184555881-95d65bf6-23b9-4f4f-87a8-153a2ef5d1ee.png)
+  <i><center> Top 30 words, Reports </center></i>
+![image](https://user-images.githubusercontent.com/70355052/184555882-de716c68-efe6-4aab-b9f6-212789e4b35b.png)
 
-My method of performance of the models will be to analyze whether extracted themes are logically clear, and then see whether paragraphs appear to match to their corresponding paragraphs. 
-
-### 9. Expected Outcomes
-Analyze and provide a holistic look of most-frequent topics of audits and evaluations, and provide analysis on their trending over time. Ultimately, I'd like to use these data sources to create a dashboard product that consolidates the topic modeling in a user-friendly way. The ultimate value of this data is that it is novel. As the coordinator for the current work plan, this product is rarely used to tell a story, and difficult to do so in its current form. By leveraging analytics and NLP techniques, I believe that new insight can be gained into OIG's successes in its work projects.  
   
 # Topic Modeling
 <table>
