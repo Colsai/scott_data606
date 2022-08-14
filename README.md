@@ -14,8 +14,9 @@
 <hr></hr>
 
 ## Project Introduction
+![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
+<i>An overall picture of the project</i>
 
-## A data-centric approach to analyzing HHS OIG's projects through DHHS OIG Work Plans & Reports (FY2018-Present)
 <table>
 <tr>
 <th> Initial/Final Project Proposal</th> 
@@ -75,16 +76,26 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 1. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
 2. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
 3. Are there any topics that appear to be underrepresented from the reports and data?
-
-
-## Data Model
-![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
   
 <hr></hr>
 
   
 ## Data Source/ Scraping
+The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. 
   
+<blockquote>
+- OIG Work Plans: Contain work scope and focus of work to be undertaken. They connect to specific Reports.
+- OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. 
+</blockquote>
+  
+Note:These are summaries of a larger report and communication log that OIG also publishes.
+![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png)
+  
+  
+Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
+
+  
+![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
   
   
 ## EDA
