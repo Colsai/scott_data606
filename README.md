@@ -6,15 +6,19 @@
 
 ## **Table of Contents**
 
-[1. Project Introduction] (#introduction)
-[2. Source Data and Web Scraping] (#sourcedata)
-[3. Exploratory Data Analysis] (#EDA)
-[4. Modeling] (#Modeling)
-[5. Project Conclusions] (Conclusions)
+* [1. Project Introduction](#Introduction)  
+
+* [2. Data Source and Web Scraping](#data-source--scraping)
+
+* [3. Exploratory Data Analysis](#EDA)  
+
+* [4. Modeling](#Modeling)  
+
+* [5. Project Conclusions](#conclusions)  
 
 <hr></hr>
 
-## Project Introduction
+## Introduction
 ![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
 <i>An overall picture of the project</i>
 
@@ -81,7 +85,7 @@ There are many avenues for fraud, waste, and abuse, and an extensive analysis of
 <hr></hr>
 
   
-## Data Source/ Scraping
+## Data Source and Scraping
 The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. 
   
 <blockquote>
