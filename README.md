@@ -163,9 +163,28 @@ The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a gen
 ### BERTopic (LDA): 
 BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. (Grootendorst)
 
-  
-  
-  
+The instantiation of each model differs greatly. 
+
+For LDA, text must be cleaned, prepared, and tokenized. In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context. (https://github.com/MaartenGr/BERTopic/issues/40)"
+
+However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer.
+
+```
+#Lemmatizer for cleaning text
+class LemmaTokenizer:
+    def __init__(self):
+        self.wnl = WordNetLemmatizer()
+    def __call__(self, doc):
+        return [self.wnl.lemmatize(t) for t in word_tokenize(doc)]
+#Set docs as workplan summaries
+docs = workplan_df["Summary"].reset_index(drop = True)
+
+#Vectorizer model for adding in Stopwords and Lemmatization
+vectorizer_model = CountVectorizer(ngram_range=(1, 2), 
+                                   stop_words=stopwords,
+                                   tokenizer=LemmaTokenizer())
+```
+
 ## Conclusions 
 <th> Final Presentation </th> 
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
