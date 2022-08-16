@@ -84,13 +84,15 @@ The text and reports data were taken from the HHS OIG Work Plan, the Office of I
 Note:These are summaries of a larger report and communication log that OIG also publishes.
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png)
   
-  
+### Work Plan Scraping  
 Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
   
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
  
-After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
 
+
+### Text Cleaning/Tokenization
+After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
 1. Items were tokenized using Regexptokenizer, which removed punctuation within summaries.
 ```
 regex_tokenizer = RegexpTokenizer(r'\w+')
