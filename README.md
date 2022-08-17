@@ -259,15 +259,10 @@ A full picture of the work can be seen here:
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
 </tr>
 <tr>  
+Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of the.
   
-  
-  
-  
-  
-  
-  
-  
-  
+### Next Steps
+While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in.
   
 # References
 <sub>1</sub> Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
