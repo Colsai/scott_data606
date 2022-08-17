@@ -58,6 +58,11 @@ After elements of a work plan are completed, a formal report is drafted and rele
 <p> These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
 
+<h4> What is topic modeling? </h4>
+Topic modeling is an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags. <sub>1</sub> In this case, we will test two topic modeling algorithms: Latent Dirichlet Allocation, and BERTopic.
+
+<sub>1</sub> https://www.analyticssteps.com/blogs/what-topic-modelling-nlp
+
 ## Questions within Project Scope
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
 2. Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
