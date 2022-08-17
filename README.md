@@ -87,9 +87,18 @@ Each of the work plan summary pages contain an html table, and a summary. The wo
 ```
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
+In the case of work plans, their 'Report Number(s)' field is a combination of the work plan number, as well as any attributed reports. We can identify reports as:
+<blockquote>
+- AUDITS/OAS: A-XX-XX-XXXXX (different from their work plan number)
+- EVALUATIONS/OEI: OEI-XX-XX-XXXXX (identical to their work plan number)
+  
+These connected numbers are used to generate the reports (See below).
+
 ### Report Scraping  
-![image](https://user-images.githubusercontent.com/70355052/185025761-6e73d42f-dfab-43a0-99a5-f6205ac083b1.png) <br>
-OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. Reports were more complex because, between the components, their HTML addresses. These are summaries of a larger report and communication log that OIG also publishes.
+![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
+OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
+
+To understand the method of report scraping, all identified work plans and reports were captured using any potential report number as a possible report, then tested against the html address. If the address exists, the corresponding report is scraped. The identified HTML patterns are as follows:
 ```
 OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{region_num}/{wp_test_num}.asp"
 ```
