@@ -30,7 +30,7 @@
 <th> https://github.com/Colsai/scott_data606/blob/main/Project_Proposal.md </th>
 </table>
 
-### **Project Focus**  
+## **Project Focus**  
 The Department of Health and Human Services- Office of Inspector General is the largest inspector general in the United States, and investigates and protects the public from bad actors in the health care sector. More specifically, HHS OIG was established in 1976, to protect the American public from fraud, waste, and abuse, with a central focus on Medicare and Medicaid programs. 
 
 Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.  OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve. In their [2020-2025 strategic plan](https://oig.hhs.gov/documents/root/7/OIG-Strategic-Plan-2020-2025.pdf), OIG outline the primary focuses of their current and future work as:
@@ -49,10 +49,10 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 
 These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. This project aims linking these priorities to NLP-based topic modeling of the <u> work plans </u> and <u> reports </u> that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp). To introduce the textual data that will be leveraged:
 
-#### What are work plan items? 
+### What are work plan items? 
 Work plan items are projects that HHS OIG declares to the public for addressing in their work; specifically with audits and evaluations and inspections that are performed. These items are identified, approved, posted, and work starts on their scope. Specifically, work plans are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>5</sub>"  
   
-#### What are reports?
+### What are reports?
 After elements of a work plan are completed, a formal report is drafted and released to the public. Reports include a rationale, methodology, findings, and recommendations. For the scope of this project, we will focus on the outlined <u> Report-in-Brief (RIB) </u> documents, hereafter referred to as a report, as these summary documents provide valuable summarizations of larger reports.
 These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
