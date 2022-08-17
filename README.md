@@ -93,7 +93,9 @@ These connected numbers are used to generate the reports (See below).
 
 ### Report Scraping  
 ![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
-OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
+OIG Reports: A longer text file, after work is completed and yields results, OIG releases a corresponding report. These reports contain Summaries, findings, methodology, and recommendations. Reports provide a more-specific picture of the work that was accomplished. 
+
+In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
 
 To understand the method of report scraping, all identified work plans and reports were captured using any potential report number as a possible report, then tested against the html address. If the address exists, the corresponding report is scraped. The identified HTML patterns are as follows:
 ```
@@ -102,7 +104,10 @@ OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{region_num}/{wp_test
 ```
 OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{prod}.asp"
 ```
-### Result
+Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe, and exported into .csv.
+
+### Results
+These are the total numbers of work plans/reports:
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
  
 ### Text Cleaning/Tokenization
