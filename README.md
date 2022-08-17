@@ -74,7 +74,7 @@ As the aforementioned work plan and report data we have is untagged and explorat
 # Data Source and Scraping
 <table>
 <tr>
-<th> Work Plan Scraper </th> 
+<th> Work Plan & Report Scraper </th> 
 <th> https://github.com/Colsai/scott_data606/blob/main/Scrapers/HHSOIG_WP_Scraper_final.ipynb </th>
 </tr>
 </table>
