@@ -76,30 +76,30 @@ After elements of a work plan are completed, a formal report is drafted and rele
 # Data Source and Scraping
 The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. 
   
-<blockquote>
 - OIG Work Plans: Contain work scope and focus of work to be undertaken. They connect to specific Reports.
 - OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. 
-</blockquote>
   
 Note:These are summaries of a larger report and communication log that OIG also publishes.
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png)
   
 ### Work Plan Scraping  
-Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
-
-Each of the work plan summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function.
+Work Plan Scraping was straightforward- the summaries were scraped by using a pattern in the HTML address. 
 ```
 workplan_website = f"https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-{summ_num}.asp"
 df = pd.read_html(workplan_website)[0]
 ```
-As the summary is within the paragraph tags in the work plan, it is found with the tag, then removed.
+Each of the work plan summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function. As the summary is within the paragraph tags in the work plan, it is found with the tag, then removed.
 ```
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
 ### Report Scraping  
-
-
-
+Reports were more complex because, between the components, their HTML addresses.
+```
+OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{region_num}/{wp_test_num}.asp"
+```
+```
+OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{prod}.asp"
+```
 ### Result
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
  
