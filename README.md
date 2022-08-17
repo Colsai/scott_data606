@@ -72,6 +72,13 @@ As the aforementioned work plan and report data we have is untagged and explorat
 <hr></hr>
  
 # Data Source and Scraping
+<table>
+<tr>
+<th> Work Plan Scraper </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Scrapers/HHSOIG_WP_Scraper_final.ipynb </th>
+</tr>
+</table>
+
 To begin our journey into utilizing topic modeling, we are looking for two sets of text data: **work plans** and **reports**. The data for the text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for *all items* available on the work plan (publically-facing). After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items. The logic and methodology is explained as follows:
  
 ## Work Plan Scraping  
