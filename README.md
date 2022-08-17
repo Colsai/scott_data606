@@ -181,19 +181,21 @@ tokenized_stemmed_sums = [[Reg_stemmer.stem(word) for word in sent] for sent in 
 After these text cleaning steps were performed, we can move on to our Exploratory Data Analysis.
 
 # EDA and Dataset Analysis
-
-After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves.
+After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves. Using Matplotlib/Seaborn, and Wordcloud packages in conjunction with Pandas, we can intuit some high-level insight into the datasets and corpuses.
 
 ## EDA on Work Scope
 - A majority of work was specifically Centers for Medicare and Medicaid work (415 work plans out of 655).
 - OAS work (and therefore, audits), made up about 65% of the total work (423 work plans); OEI work (evaluations and inspections), made up the other 35%. 
 - As work plans can recur (and repeat year-to-year), there were duplicates. However, as language and scope of these projects can change year-to-year, duplicates were not removed to retain actual work being completed.
+![image](https://user-images.githubusercontent.com/70355052/185261385-5aaa6587-92ba-40bb-83b6-695fdd273339.png)
 
-## EDA on Texts
-- Reports were noticeably longer in textual length.
-- Between audits and evaluations, the actual length of texts was similar, as shown:
+## EDA Insights from Texts
+- Between audits and evaluations, the actual length of work plan texts was very similar, as shown:
   ![image](https://user-images.githubusercontent.com/70355052/184555866-cf909c2b-6d72-4612-85b2-0dcc41a85d6d.png)<p></p>
-- Overall, when looking through the tokenized work plans and reports, obvious similarities were present in the scope of analysis:
+- Reports were noticeably longer (257 total tokens/avg) in textual length than work plans (88 total tokens/avg).
+
+### Visualizing the tokens
+Overall, when looking through the tokenized work plans and reports, obvious similarities were present in the scope of analysis:
   <i><center> Top-100 Words, Work Plans </center></i><p></p>
 ![image](https://user-images.githubusercontent.com/70355052/185027844-fb3bc783-2980-44d9-b0e0-f2faa9f68b4e.png)<p></p>
   <i><center> Top-100 words, Reports </center></i><p></p>
