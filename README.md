@@ -35,7 +35,6 @@ The Department of Health and Human Services- Office of Inspector General is the 
 
 Healthcare compliance officers, hospitals, and the public are interested in how HHS OIG protects them from issues.  OIG's mission is to provide objective oversight to promote the economy, efficiency, effectiveness, and integrity of HHS programs, as well as the health and welfare of the people they serve. In their [2020-2025 strategic plan](https://oig.hhs.gov/documents/root/7/OIG-Strategic-Plan-2020-2025.pdf), OIG outline the primary focuses of their current and future work as:
 
-<blockquote>
 <ul>
 <li> Safeguarding the Medicare Trust Funds  
 <li> Strengthening Medicaid protections against fraud, waste, and abuse  
@@ -47,7 +46,6 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 <li> Ensuring HHS managed care and new healthcare models produce value  
 <li> Identifying opportunities to lower prescription drug spending for patients and programs 
 </ul>
-</blockquote>
 
 This project aims at a textual analysis of the <u> work plans </u> and <u> reports </u> that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp)
 
@@ -58,17 +56,15 @@ Work plan items are projects that HHS OIG declares to the public for addressing 
 <h4> What are reports? </h4>
 After elements of a work plan are completed, a formal report is drafted and released to the public. Reports include a rationale, methodology, findings, and recommendations. For the scope of this project, we will focus on the outlined <u> Report-in-Brief (RIB) </u> documents, hereafter referred to as a report, as these summary documents provide valuable summarizations of larger reports.
   
-<p> 
-  
 <p> These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
 
 ## Questions within Project Scope
-- What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
-- Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
-- How do we connect these plans and outcomes to OIG's priority outcomes and larger mission (see *Project Focus*)
-- Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
-- Are there any topics that appear to be underrepresented from the reports and data?
+1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
+2. Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
+3. How do we connect these plans and outcomes to OIG's priority outcomes and larger mission (see *Project Focus*)
+4. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
+5. Are there any topics that appear to be underrepresented from the reports and data?
   
 <hr></hr>
 
