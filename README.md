@@ -159,12 +159,12 @@ This test and attempt at scraping is iterated across the entire set of possible 
  
 ## c. Text Cleaning/Tokenization
 After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. These steps utilized much of NLTK's in-built text cleaning functionalities, such as English stopwords. The process is as follows:
-1. We tokenize items using Regexptokenizer, which removed punctuation within summaries, so that these tokens would not affect the model.
+1. We tokenize items using Regexptokenizer, which removed punctuation within summaries, so that these tokens would not affect the model and be interpreted by the model as a token:
 ```
 regex_tokenizer = RegexpTokenizer(r'\w+')
 ```
 
-2. We remove stopwords from the work plan/report text data. This project used the base NLTK English stopwords list, but additionally included several other words ('on', 'or', etc., and domain-specific words, such as 'oig', 'hhs', as these words did not provide any helpful information for the scope of the topic modeling that followed. This was to retain only useful language for the model.
+2. We remove stopwords from the work plan/report text data, in order to exclude low/no-meaning words within our corpuses. This project used the base NLTK English stopwords list, but additionally included several other words ('on', 'or', etc., and domain-specific words, such as 'oig', 'hhs', as these words did not provide any helpful information for the scope of the topic modeling that followed. This was to retain only useful language for the model.
 
 ```
 tokenized_sums = [[i for i in regex_tokenizer.tokenize(sent) if i not in stopwords] 
@@ -178,16 +178,20 @@ Reg_stemmer = RegexpStemmer("ing$|s$|ies$")
 tokenized_stemmed_sums = [[Reg_stemmer.stem(word) for word in sent] for sent in tokenized_sums]
 ```
 
-After these text cleaning steps were performed, we can move on to our Exploratory Data Analysis.
+As we are looking for comparing results across the two models, the same procedures were applied to both the work plans and reports datasets. After these text cleaning steps were performed, we can move on to our Exploratory Data Analysis.
 
 # EDA and Dataset Analysis
 After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves. Using Matplotlib/Seaborn, and Wordcloud packages in conjunction with Pandas, we can intuit some high-level insight into the datasets and corpuses.
 
-## EDA on Work Scope
-- A majority of work was specifically Centers for Medicare and Medicaid work (415 work plans out of 655).
+## EDA on Work Plans
+- The 'Announced or Revised' column serves as the status for that item, identifying 266/659 work plans as Completed, and 70 as Completed Partial. From the current work plan website, ~280 items were identified as currently ongoing (changes per month with updates).
+- A majority of work plans were specifically for Centers for Medicare and Medicaid work (415 work plans out of 655). Other major agencies that HHS OIG indicated work on included ACF, NIH, FDA, CDC, IHS, and OS. Some items were multi-agency work plans as well.
 - OAS work (and therefore, audits), made up about 65% of the total work (423 work plans); OEI work (evaluations and inspections), made up the other 35%. 
 - As work plans can recur (and repeat year-to-year), there were duplicates. However, as language and scope of these projects can change year-to-year, duplicates were not removed to retain actual work being completed.
-![image](https://user-images.githubusercontent.com/70355052/185261385-5aaa6587-92ba-40bb-83b6-695fdd273339.png)
+- Any item with that had identical report numbers *was* removed, as this would indicate an exact duplicate. 
+
+## EDA on Reports
+- Reports, connected to work plans, were not attached to every work plan. Due to the logic of the numbering system, it is difficult to tell exactly how many work plans are fully complete.
 
 ## EDA Insights from Texts
 - Between audits and evaluations, the actual length of work plan texts was very similar, as shown:
