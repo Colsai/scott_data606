@@ -86,7 +86,18 @@ Note:These are summaries of a larger report and communication log that OIG also 
   
 ### Work Plan Scraping  
 Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
-  
+```
+#Scrape work plan website with bs4
+response = requests.get(workplan_website)
+                
+soup = BeautifulSoup(response.text, 'html.parser')
+
+num_para_elements = len(soup.find_all('p'))
+
+wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
+
+df["Summary"] = wp_summary
+```
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
  
 
