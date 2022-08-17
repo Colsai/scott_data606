@@ -1,7 +1,7 @@
 ![image info](https://github.com/Colsai/scott_data606/blob/main/hhsoig-banner-logo.png)  
 # Utilizing Topic Modeling to Identify Work Priorities at HHS OIG
-### Scott Hirabayashi (under the supervision of Dr. Jay Wang  
-### Summer 2022 (June-August)  
+### Scott Hirabayashi (under the supervision of Dr. Jay Wang)
+### DATA606: UMBC Summer 2022 (June-August)  
 <hr></hr>
 
 ## **Table of Contents**
