@@ -114,6 +114,18 @@ Using a similar technique to scraping work plan summaries based on paragraph tag
 ### Results
 These are the total numbers of work plans/reports: <br>  
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
+
+<table>
+<tr>
+<th> Work Plans </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_workplans.csv</th>
+</tr>
+<th> Reports </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Data_Sources/HHS_OIG_Reports.csv </th>
+</tr>
+<tr>
+</tr>
+</table>
  
 ### Text Cleaning/Tokenization
 After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
