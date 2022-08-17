@@ -160,10 +160,10 @@ After defining the scope of our corpus as two sets of documents: OIG's work plan
 - Between audits and evaluations, the actual length of texts was similar, as shown:
   ![image](https://user-images.githubusercontent.com/70355052/184555866-cf909c2b-6d72-4612-85b2-0dcc41a85d6d.png)<p></p>
 - Overall, when looking through the tokenized work plans and reports, obvious similarities were present in the scope of analysis:
-  <i><center> Top 30 Words, Work Plans </center></i>
-![image](https://user-images.githubusercontent.com/70355052/184555881-95d65bf6-23b9-4f4f-87a8-153a2ef5d1ee.png)<p></p>
-  <i><center> Top 30 words, Reports </center></i>
-![image](https://user-images.githubusercontent.com/70355052/184555882-de716c68-efe6-4aab-b9f6-212789e4b35b.png)
+  <i><center> Top 30 Words, Work Plans </center></i><p></p>
+![image]![image](https://user-images.githubusercontent.com/70355052/185027844-fb3bc783-2980-44d9-b0e0-f2faa9f68b4e.png)<p></p>
+  <i><center> Top 30 words, Reports </center></i><p></p>
+![image](https://user-images.githubusercontent.com/70355052/185027815-c615e356-d08a-4f2d-be53-c2826d2ddfcf.png)
   
 # Topic Modeling
 <table>
