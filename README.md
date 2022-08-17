@@ -72,43 +72,44 @@ As the aforementioned work plan and report data we have is untagged and explorat
 <hr></hr>
  
 # Data Source and Scraping
-In this case, we are looking for two sets of text data: **work plans** and **reports**.
-
-The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for all items. After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items.
+To begin our journey into utilizing topic modeling, we are looking for two sets of text data: **work plans** and **reports**. The data for the text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for *all items* available on the work plan (publically-facing). After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items. The logic and methodology is explained as follows:
  
 ### Work Plan Scraping  
-OIG Work Plans: A combination of several data elements- agency, expected date, component, status, title, and summary, work plans are essentially an outline of work scope and focus of work to be undertaken, as well as links/connections to completed **reports**. 
+OIG Work Plans: A combination of several data elements- agency, expected date, component, status, title, and summary, work plans are essentially an outline of work scope and focus of work to be undertaken, as well as links/connections to completed **reports**.
 
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png) <br>
-Work Plan Scraping was straightforward- the summaries were scraped by using a pattern in the HTML address. Each of the work plan html summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function. 
+Work Plan Scraping is straightforward- the summaries were scraped by using a pattern in the HTML address that was identified by the way that the pages are structured. Each page is individually added in a sequential order from 0 through around 700 (currently). There are some gaps between each summary page number, but this was rectified by testing counts through 750, to ensure that all pages were captured. Each of the work plan html summary pages contain an html table (which contains identifier information), and a text summary, the goal of our scraping for topic modeling. The work plan's html table is easily scraped with Pandas' inbuilt read_html function. 
 ```
 workplan_website = f"https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-{summ_num}.asp"
 df = pd.read_html(workplan_website)[0]
 ```
-The one missing data element is the most important, however- the text data. As the summary is within the paragraph tags in the work plan, it is found by using the paragraph tags, concatenated as a single string, then cleaned by replacement.
+The one missing data element is the most important, however- the summary text data. As the summary is within the paragraph tags in the work plan, it is found by utilizing bs4 and using the paragraph tags, taking the data within, concatenating it as a single string, then cleaning the html paragraph tags by replacement.
 ```
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
-In the case of work plans, their 'Report Number(s)' field is a combination of the work plan number, as well as any attributed reports. We can identify reports as:
+Another important data element here are the connected reports that are contained within the Report Number(s) field. For work plans, these items also capture any connected work that was completed on the work plan. This is found in each of their 'Report Number(s)' fields, a combination of the work plan number, as well as any attributed reports. We can identify reports as:
 > - AUDITS/OAS: A-XX-XX-XXXXX (different from their work plan number)
 > - EVALUATIONS/OEI: OEI-XX-XX-XXXXX (identical to their work plan number)
 
-These connected numbers are used to generate the reports (See below).
+and disregard:
+> - AUDITS/OAS: W-XX-XX-XXXXX (W-numbers are only work plans)
+
+After the scrape of each summary page, these report numbers are used to generate the reports through their website addresses (See below). For the full dataset of summaries, these were scraped into .csv format.
 
 ### Report Scraping  
 ![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
-OIG Reports: A longer text file, after work is completed and yields results, OIG releases a corresponding report. These reports contain Summaries, findings, methodology, and recommendations. Reports provide a more-specific picture of the work that was accomplished. 
+OIG Reports are longer text files. They are issued after work is completed and yields results, where OIG releases a corresponding report that is added to a work plan (in Report Number(s) field). Rports contain Summaries, findings, methodology, and recommendations, and provide a more-specific picture of the work that was accomplished. In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
 
-In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
-
-To understand the method of report scraping, all identified work plans and reports were captured using any potential report number as a possible report, then tested against the html address. If the address exists, the corresponding report is scraped. The identified HTML patterns are as follows:
+To understand the method of report scraping, all identified work plans and reports were captured using any potential report number as a possible report, then tested against the html addresses for their corresponding procuts. *If* the address exists, the corresponding report is scraped, otherwise it returns as an empty string (""). The identified HTML patterns per websites are as follows:
 ```
-OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{region_num}/{wp_test_num}.asp"
+#OAS (Audits) use region number (a part of the A-number code), and the full work plan number
+OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{REGION_NUMBER}/{REPORT_NUMBER}.asp"
 ```
 ```
-OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{prod}.asp"
+#OEI numbers simply use the full string
+OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{REPORT_NUMBER}.asp"
 ```
-Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe, and exported into .csv.
+Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe. and exported into .csv.
 
 ### Results
 These are the total numbers of work plans/reports: <br>  
