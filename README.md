@@ -188,6 +188,7 @@ A deeper look into the EDA performed on both datasets can be found here:
 <tr>
 </tr>
 </table>
+
 # Topic Modeling
 As we have defined our data, explored it, and prepared it for modeling, we can begin to use our data within the topic modeling algorithms. In this case, we use two fully-unsupervised topic model algorithms for clustering our topics. 
   
