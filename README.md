@@ -163,8 +163,10 @@ After defining the scope of our corpus as two sets of documents: OIG's work plan
   <i><center> Top-100 Words, Work Plans </center></i><p></p>
 ![image](https://user-images.githubusercontent.com/70355052/185027844-fb3bc783-2980-44d9-b0e0-f2faa9f68b4e.png)<p></p>
   <i><center> Top-100 words, Reports </center></i><p></p>
-![image](https://user-images.githubusercontent.com/70355052/185027815-c615e356-d08a-4f2d-be53-c2826d2ddfcf.png)
-  
+![image](https://user-images.githubusercontent.com/70355052/185027815-c615e356-d08a-4f2d-be53-c2826d2ddfcf.png)<p></p>
+
+A quick glance at these two word clouds identifies how similar the language contained in the work plans and reports appears to be. *Medicare, Medicaid, Hospital, program* and *Provider*, obvious words that connect to OIG's CMS-heavy focus. However, there is some distinguishing language, such as reports containing language highlighting the end-stage of their work, ie *filed report, publication, and reviewed*. In the next step, topic modeling, we'll look at how closely these topics actually are.
+
 # Topic Modeling
 <table>
 <tr>
