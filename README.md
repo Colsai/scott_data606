@@ -255,10 +255,13 @@ A full picture of the work can be seen here:
 </table>  
 
 ## Conclusions 
+<table>
 <th> Final Presentation </th> 
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
 </tr>
-<tr>  
+<tr>
+</table>
+
 Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of the.
   
 ### Next Steps
