@@ -271,6 +271,7 @@ A full picture of the work can be seen here:
 Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of the.
   
 ### Next Steps
+
 While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in.
   
 # References
@@ -283,3 +284,33 @@ While we were able to create and analyze the initial topic models for the two da
 <sub>4</sub> “What You Need to Know About OIG Audits.” Journal of AHIMA, https://journal.ahima.org/page/what-you-need-to-know-about-oig-audits. Accessed 8 June 2022.
 
 <sub>5</sub> Work Plan | Office of Inspector General | U.S. Department of Health and Human Services. https://oig.hhs.gov/reports-and-publications/workplan/index.asp. Accessed 8 June 2022.
+
+### Works Cited
+
+Kapadia, Shashank. “Topic Modeling in Python: Latent Dirichlet Allocation (LDA).” Medium, 29 Dec. 2020, https://towardsdatascience.com/end-to-end-topic-modeling-in-python-latent-dirichlet-allocation-lda-35ce4ed6b3e0.
+
+Kelechava, Marc. “Using LDA Topic Models as a Classification Model Input.” Medium, 6 Aug. 2020, https://towardsdatascience.com/unsupervised-nlp-topic-models-as-a-supervised-learning-input-cf8ee9e5cf28.
+
+Khalid, Irfan Alghani. “Implement Your Topic Modeling Using The BERTopic Library.” Medium, 25 Jan. 2022, https://towardsdatascience.com/implement-your-topic-modeling-using-the-bertopic-library-d6708baa78fe.
+
+“PyLDAvis: Topic Modelling Exploration Tool That Every NLP Data Scientist Should Know.” Neptune.Ai, 16 Nov. 2020, https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know.
+
+Yadav, Kajal. “The Complete Practical Guide to Topic Modelling.” Medium, 22 Jan. 2022, https://towardsdatascience.com/topic-modelling-f51e5ebfb40a.
+
+## BERTopic Topic Modeling
+*BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. BERTopic supports guided, (semi-) supervised, and dynamic topic modeling. (MaartgenGr)* 
+
+#### Repo
+- https://github.com/MaartenGr/BERTopic
+
+#### Papers
+- https://arxiv.org/pdf/2203.05794.pdf
+- https://arxiv.org/pdf/2107.02173.pdf
+
+- https://hackernoon.com/nlp-tutorial-topic-modeling-in-python-with-bertopic-372w35l9
+
+#### On removing stopwords:
+- https://stackoverflow.com/questions/68127754/removal-of-stop-words-and-stemming-lemmatization-for-bertopic#:~:text=In%20conclusion%2C%20the%20BERTTopic%20does,both%20processing%20time%20and%20results.
+
+#### On Lemmatization
+- https://github.com/MaartenGr/BERTopic/issues/286
