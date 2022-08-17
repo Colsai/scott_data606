@@ -67,10 +67,9 @@ After elements of a work plan are completed, a formal report is drafted and rele
 5. Are there any topics that appear to be underrepresented from the reports and data?
   
 <hr></hr>
-
  
 # Data Source and Scraping
-The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. 
+The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [OIG Work PLan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp)
   
 - OIG Work Plans: Contain work scope and focus of work to be undertaken. They connect to specific Reports.
 - OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. 
