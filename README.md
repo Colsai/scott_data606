@@ -129,26 +129,28 @@ Using a similar technique to scraping work plan summaries based on paragraph tag
 </table>
  
 ### Text Cleaning/Tokenization
-After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
-1. Items were tokenized using Regexptokenizer, which removed punctuation within summaries.
+After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. These steps utilized much of NLTK's in-built text cleaning functionalities, such as English stopwords. The process is as follows:
+1. We tokenize items using Regexptokenizer, which removed punctuation within summaries, so that these tokens would not affect the model.
 ```
 regex_tokenizer = RegexpTokenizer(r'\w+')
 ```
 
-2. Work plan/report summaries had stopwords removed: This project used the base NLTK English stopwords list, but additionally included several other words ('on', 'or', etc., and domain-specific words, such as 'oig', 'hhs', as these words did not provide any helpful information for the scope of the topic modeling that followed.
+2. We remove stopwords from the work plan/report text data. This project used the base NLTK English stopwords list, but additionally included several other words ('on', 'or', etc., and domain-specific words, such as 'oig', 'hhs', as these words did not provide any helpful information for the scope of the topic modeling that followed. This was to retain only useful language for the model.
 
 ```
 tokenized_sums = [[i for i in regex_tokenizer.tokenize(sent) if i not in stopwords] 
                   for sent in wp_init_srs]
 ```
 
-3. A simple Regex Stemmer was used. Because of many acronyms and domain-specific words, initial tests of modeling with more-restrictive stemmers performed more poorly for topic modeling.
+3. We utilize a simple regex stemmer. Because of many acronyms and domain-specific words, initial tests of modeling with more-restrictive stemmers performed more poorly for topic modeling. The Regex stemmer was chosen, as attempts at more-intrusive stemmers appeared to affect the LDA model later on, and it was determined that retaining a simple model (rather than [Snowball Stemmer](https://www.geeksforgeeks.org/snowball-stemmer-nlp/) would perform better for work plan and report topic modeling)
 
 ```
 Reg_stemmer = RegexpStemmer("ing$|s$|ies$")
 tokenized_stemmed_sums = [[Reg_stemmer.stem(word) for word in sent] for sent in tokenized_sums]
 ```
-  
+
+After these text cleaning steps were performed, we can move on to our Exploratory Data Analysis.
+
 # EDA and Dataset Analysis
 <table>
 <tr>
