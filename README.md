@@ -152,14 +152,6 @@ tokenized_stemmed_sums = [[Reg_stemmer.stem(word) for word in sent] for sent in 
 After these text cleaning steps were performed, we can move on to our Exploratory Data Analysis.
 
 # EDA and Dataset Analysis
-<table>
-<tr>
-<th> EDA </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/OIGworkplan_Initial_EDA.ipynb </th>
-</tr>
-<tr>
-</tr>
-</table>
 
 After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves.
 
@@ -187,17 +179,17 @@ After defining the scope of our corpus as two sets of documents: OIG's work plan
 
 A quick glance at these two word clouds identifies how similar the language contained in the work plans and reports appears to be. *Medicare, Medicaid, Hospital, program* and *Provider*, obvious words that connect to OIG's CMS-heavy focus. However, there is some distinguishing language, such as reports containing language highlighting the end-stage of their work, ie *filed report, publication, and reviewed*. In the next step, topic modeling, we'll look at how closely these topics actually are.
 
-# Topic Modeling
+A deeper look into the EDA performed on both datasets can be found here:
 <table>
 <tr>
-<th> Topic Modeling Reports </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Reports_2.ipynb </th>
+<th> EDA </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/data_preparation_eda/OIGworkplan_Initial_EDA.ipynb </th>
 </tr>
 <tr>
-<th> Topic Modeling Work Plans </th> 
-<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Workplans_1.ipynb </th>
 </tr>
-</table>  
+</table>
+# Topic Modeling
+As we have defined our data, explored it, and prepared it for modeling, we can begin to use our data within the topic modeling algorithms. In this case, we use two fully-unsupervised topic model algorithms for clustering our topics. 
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
 ### Latent Dirichlet Allocation (LDA):
@@ -227,6 +219,17 @@ vectorizer_model = CountVectorizer(ngram_range=(1, 2),
                                    stop_words=stopwords,
                                    tokenizer=LemmaTokenizer())
 ```
+A full picture of the work can be seen here:
+<table>
+<tr>
+<th> Topic Modeling Reports </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Reports_2.ipynb </th>
+</tr>
+<tr>
+<th> Topic Modeling Work Plans </th> 
+<th> https://github.com/Colsai/scott_data606/blob/main/Topic_Modeling_Final/Topic_Modeling_Workplans_1.ipynb </th>
+</tr>
+</table>  
 
 ## Conclusions 
 <th> Final Presentation </th> 
