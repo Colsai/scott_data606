@@ -49,18 +49,18 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 
 These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. This project aims linking these priorities to NLP-based topic modeling of the <u> work plans </u> and <u> reports </u> that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp). To introduce the textual data that will be leveraged:
 
-<h4> What are work plan items? </h4>
+#### What are work plan items? 
 Work plan items are projects that HHS OIG declares to the public for addressing in their work; specifically with audits and evaluations and inspections that are performed. These items are identified, approved, posted, and work starts on their scope. Specifically, work plans are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>5</sub>"  
   
-<h4> What are reports? </h4>
+#### What are reports?
 After elements of a work plan are completed, a formal report is drafted and released to the public. Reports include a rationale, methodology, findings, and recommendations. For the scope of this project, we will focus on the outlined <u> Report-in-Brief (RIB) </u> documents, hereafter referred to as a report, as these summary documents provide valuable summarizations of larger reports.
 These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
 
-<h4> What is topic modeling? </h4>
-Bhutta descripes topic modeling as an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
+### What is topic modeling?
+Bhutta descripes topic modeling as an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). Essentially, topic modeling is a natural language processing technique that ingests text data and returns a logical classification of topics that are frequent across each of the texts, additionally classifying in such a way that texts can have more than one topic.
 
-As the aforementioned work plan and report data we have is untagged and exploratory, topic modeling provides significant opportunity for identifying thematic similarities and clusters so that we can extract logic about the scope of OIG's current work. Thus, in this project, we will test and leverage two topic modeling algorithms: Latent Dirichlet Allocation and BERTopic, for making sense of these corpuses of text data.
+As the aforementioned work plan and report data we have is untagged and exploratory, topic modeling provides significant opportunity for identifying thematic similarities and *clusters* so that we can extract logic about the major themes of OIG's current work. We will aim to test and leverage two topic modeling algorithms: *Latent Dirichlet Allocation* and *BERTopic* (see [4. Modeling](#topic-modeling)), for making sense of these corpuses of text data.
 
 ## Questions within Project Scope
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
