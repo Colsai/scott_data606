@@ -116,7 +116,20 @@ OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{REGION_NUMBER}/{REPO
 #OEI numbers simply use the full string
 OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{REPORT_NUMBER}.asp"
 ```
-Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe. and exported into .csv.
+Upon checking the report number against the website, we test whether or not that page exists. While we would expect A-numbers to always have a website, OEI- numbers may not, since the work plan and report number are shared- there is no easy way to know whether or not the report actually exists. Therefore, we test with the *requests* package to see whether or not the website exists before attempting to scrape it. 
+
+If it does, we use similar content identification based on the page tags. In order to prevent issues with overloading the server, we also add a one-second pause per item.
+```
+response = requests.get(OAS_prod_website)
+
+#If the response is positive, scrape the page.    
+if str(response) == '<Response [200]>':
+    soup = BeautifulSoup(response.text, 'html.parser')
+    wp_item_title = str(soup.find_all('title')[0]).replace('<title>','').replace('</title>','')
+    wp_item_summary = str(soup.find_all('p')[5::]).replace("[","").replace("]","").replace("<p>","").replace("</p>","")
+    time.sleep(1)
+```
+This test and attempt at scraping is iterated across the entire set of possible report numbers, then all existing Reports are added to a pandas dataframe. Finally, the file is exported into .csv format.
 
 ## Results
 **Here are the total numbers of work plans/reports:** <br>  
