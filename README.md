@@ -74,7 +74,7 @@ As the aforementioned work plan and report data we have is untagged and explorat
 # Data Source and Scraping
 To begin our journey into utilizing topic modeling, we are looking for two sets of text data: **work plans** and **reports**. The data for the text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for *all items* available on the work plan (publically-facing). After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items. The logic and methodology is explained as follows:
  
-### Work Plan Scraping  
+## Work Plan Scraping  
 OIG Work Plans: A combination of several data elements- agency, expected date, component, status, title, and summary, work plans are essentially an outline of work scope and focus of work to be undertaken, as well as links/connections to completed **reports**.
 
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png) <br>
@@ -96,7 +96,7 @@ and disregard:
 
 After the scrape of each summary page, these report numbers are used to generate the reports through their website addresses (See below). For the full dataset of summaries, these were scraped into .csv format.
 
-### Report Scraping  
+## Report Scraping  
 ![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
 OIG Reports are longer text files. They are issued after work is completed and yields results, where OIG releases a corresponding report that is added to a work plan (in Report Number(s) field). Rports contain Summaries, findings, methodology, and recommendations, and provide a more-specific picture of the work that was accomplished. In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
 
@@ -111,11 +111,11 @@ OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{REPORT_NUMBER}.asp"
 ```
 Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe. and exported into .csv.
 
-### Results
+## Results
 **Here are the total numbers of work plans/reports:** <br>  
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
 
-**Dataset Locations:** 
+### Dataset Locations:
 <table>
 <tr>
 <th> Work Plans </th> 
@@ -128,7 +128,7 @@ Using a similar technique to scraping work plan summaries based on paragraph tag
 </tr>
 </table>
  
-### Text Cleaning/Tokenization
+## Text Cleaning/Tokenization
 After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. These steps utilized much of NLTK's in-built text cleaning functionalities, such as English stopwords. The process is as follows:
 1. We tokenize items using Regexptokenizer, which removed punctuation within summaries, so that these tokens would not affect the model.
 ```
