@@ -229,7 +229,12 @@ BERTopic is a topic modeling technique that leverages BERT embeddings and a clas
 
 The instantiation of each model differs greatly. 
 
-For LDA, text must be cleaned, prepared, and tokenized. In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context. (https://github.com/MaartenGr/BERTopic/issues/40)"
+For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best. We chose 17 topics for our LDA topic number, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
+![image](https://user-images.githubusercontent.com/70355052/185263656-e5cbdd06-ff20-4385-b0ca-44d44d7e3ccf.png)
+
+
+
+In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context. (https://github.com/MaartenGr/BERTopic/issues/40)"
 
 However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer.
 
