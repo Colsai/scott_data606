@@ -73,15 +73,15 @@ In this case, we are looking for two sets of text data: **work plans** and **rep
 The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for all items. After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items.
  
 ### Work Plan Scraping  
-OIG Work Plans: Contain work scope and focus of work to be undertaken, as well as links/connections to completed **reports**. 
+OIG Work Plans: A combination of several data elements- agency, expected date, component, status, title, and summary, work plans are essentially an outline of work scope and focus of work to be undertaken, as well as links/connections to completed **reports**. 
 
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png) <br>
-Work Plan Scraping was straightforward- the summaries were scraped by using a pattern in the HTML address. 
+Work Plan Scraping was straightforward- the summaries were scraped by using a pattern in the HTML address. Each of the work plan html summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function. 
 ```
 workplan_website = f"https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-{summ_num}.asp"
 df = pd.read_html(workplan_website)[0]
 ```
-Each of the work plan summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function. As the summary is within the paragraph tags in the work plan, it is found with the tag, then removed.
+The one missing data element is the most important, however- the text data. As the summary is within the paragraph tags in the work plan, it is found by using the paragraph tags, concatenated as a single string, then cleaned by replacement.
 ```
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
