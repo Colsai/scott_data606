@@ -83,7 +83,7 @@ To begin our journey into utilizing topic modeling, we are looking for two sets 
   
 While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for *all items* available on the work plan (publically-facing). After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items with the *requests* and *beautifulsoup* packages. The logic and methodology is explained as follows:
  
-## Work Plan Scraping  
+## a. Work Plan Scraping  
 OIG Work Plans are a combination of several data elements- agency, expected date, component, status, title, and summary. Each work plan is essentially an outline of work scope and focus of work to be undertaken, as well as links/connections to completed **reports**.
 ![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png) <br>
   
@@ -106,7 +106,7 @@ and disregard:
 
 After the scrape of each summary page, these report numbers are used to generate the reports through their website addresses (See below). For the full dataset of summaries, these were scraped into .csv format.
 
-## Report Scraping  
+## b. Report Scraping  
 OIG Reports are longer text files. They are issued after work is completed and yields results, where OIG releases a corresponding report that is added to a work plan (in Report Number(s) field). Rports contain Summaries, findings, methodology, and recommendations, and provide a more-specific picture of the work that was accomplished. In this case, we are actually looking at Report-in-brief(RIB) documents, presented as active server pages (.asp) on HHS OIG's websites. Essentially, these RIBs are summaries of a larger report and communication log that OIG also publishes, and are more useful as they highlight only key information.
   
 ![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
@@ -157,7 +157,7 @@ This test and attempt at scraping is iterated across the entire set of possible 
 </tr>
 </table>
  
-## Text Cleaning/Tokenization
+## c. Text Cleaning/Tokenization
 After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. These steps utilized much of NLTK's in-built text cleaning functionalities, such as English stopwords. The process is as follows:
 1. We tokenize items using Regexptokenizer, which removed punctuation within summaries, so that these tokens would not affect the model.
 ```
@@ -183,13 +183,6 @@ After these text cleaning steps were performed, we can move on to our Explorator
 # EDA and Dataset Analysis
 
 After defining the scope of our corpus as two sets of documents: OIG's work plans and reports, we can proceed with a high-level look of the texts themselves.
-
-## General Information on Work Plan and Reports Datasets:
-- Scope: OIG's work across the United States (work scope includes DC/Puerto Rico), Time Range: FY2018 (starting 10/17) to June 2022. The work plan is updated monthly.
-- All public OIG **Projects** (work plan items) and their connected **reports**
-- Projects defined as: public audits and evaluations, which are performed by separate entities within OIG.
-- Reports defined as: reports written after completion of specific analysis performed by a work plan project item.
-- Excludes specific or individual investigative actions/arrests (Offive of Investigation data not included)
 
 ## EDA on Work Scope
 - A majority of work was specifically Centers for Medicare and Medicaid work (415 work plans out of 655).
