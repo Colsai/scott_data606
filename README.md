@@ -77,7 +77,7 @@ The text and reports data were taken from the HHS OIG Work Plan, the Office of I
 ### Work Plan Scraping  
 OIG Work Plans: Contain work scope and focus of work to be undertaken, as well as links/connections to completed **reports**. 
 
-![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png)
+![image](https://user-images.githubusercontent.com/70355052/184550238-7ed029f7-a23d-420e-8b46-d9510b587c68.png) <br>
 Work Plan Scraping was straightforward- the summaries were scraped by using a pattern in the HTML address. 
 ```
 workplan_website = f"https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-{summ_num}.asp"
@@ -88,6 +88,7 @@ Each of the work plan summary pages contain an html table, and a summary. The wo
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
 ### Report Scraping  
+![image](https://user-images.githubusercontent.com/70355052/185025761-6e73d42f-dfab-43a0-99a5-f6205ac083b1.png) <br>
 OIG Reports: Contain Summaries, findings, methodology, and recommendations. They provide a more-specific picture of the work that was accomplished. Reports were more complex because, between the components, their HTML addresses. These are summaries of a larger report and communication log that OIG also publishes.
 ```
 OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{region_num}/{wp_test_num}.asp"
