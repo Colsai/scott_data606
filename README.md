@@ -112,9 +112,10 @@ OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{REPORT_NUMBER}.asp"
 Using a similar technique to scraping work plan summaries based on paragraph tags, all existing Reports are added to a pandas dataframe. and exported into .csv.
 
 ### Results
-These are the total numbers of work plans/reports: <br>  
+**Here are the total numbers of work plans/reports:** <br>  
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
 
+**Dataset Locations:** 
 <table>
 <tr>
 <th> Work Plans </th> 
