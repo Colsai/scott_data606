@@ -156,13 +156,13 @@ After defining the scope of our corpus as two sets of documents: OIG's work plan
 - As work plans can recur (and repeat year-to-year), there were duplicates. However, as language and scope of these projects can change year-to-year, duplicates were not removed to retain actual work being completed.
 
 ## EDA on Texts
-- Reports were noticeably longer in
+- Reports were noticeably longer in textual length.
 - Between audits and evaluations, the actual length of texts was similar, as shown:
   ![image](https://user-images.githubusercontent.com/70355052/184555866-cf909c2b-6d72-4612-85b2-0dcc41a85d6d.png)<p></p>
 - Overall, when looking through the tokenized work plans and reports, obvious similarities were present in the scope of analysis:
-  <i><center> Top 30 Words, Work Plans </center></i><p></p>
-![image]![image](https://user-images.githubusercontent.com/70355052/185027844-fb3bc783-2980-44d9-b0e0-f2faa9f68b4e.png)<p></p>
-  <i><center> Top 30 words, Reports </center></i><p></p>
+  <i><center> Top-100 Words, Work Plans </center></i><p></p>
+![image](https://user-images.githubusercontent.com/70355052/185027844-fb3bc783-2980-44d9-b0e0-f2faa9f68b4e.png)<p></p>
+  <i><center> Top-100 words, Reports </center></i><p></p>
 ![image](https://user-images.githubusercontent.com/70355052/185027815-c615e356-d08a-4f2d-be53-c2826d2ddfcf.png)
   
 # Topic Modeling
