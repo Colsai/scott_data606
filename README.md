@@ -112,15 +112,15 @@ OIG Reports are longer text files. They are issued after work is completed and y
 ![image](https://user-images.githubusercontent.com/70355052/185025880-f793a586-1d17-4f67-ac71-a7240395055e.png) <br>
 To understand the method of report scraping, all identified work plans and reports were captured using any potential report number as a possible report, then tested against the html addresses for their corresponding procuts. *If* the address exists, the corresponding report is scraped, otherwise it returns as an empty string (""). The identified HTML patterns per websites are as follows:
 
-#### Audits 
-- Example: https://oig.hhs.gov/oei/reports/OEI-02-20-00490.asp
+#### Audit Reports
+- ex. https://oig.hhs.gov/oei/reports/OEI-02-20-00490.asp
 ```
 #OAS (Audits) use region number (a part of the A-number code), and the full work plan number
 OAS_prod_website = f"https://oig.hhs.gov/oas/reports/region{REGION_NUMBER}/{REPORT_NUMBER}.asp"
 ```
 
-#### Evaluations 
-- Example: https://oig.hhs.gov/oas/reports/region1/12000508.pdf
+#### Evaluation/Inspection Reports
+- ex. https://oig.hhs.gov/oas/reports/region1/12000508.pdf
 ```
 #OEI numbers simply use the full string
 OEI_prod_website = f"https://oig.hhs.gov/oei/reports/{REPORT_NUMBER}.asp"
