@@ -72,7 +72,6 @@ In this case, we are looking for two sets of text data: **work plans** and **rep
 
 The text and reports data were taken from the HHS OIG Work Plan, the Office of Inspector General's website that contains all of OIG's publically-declared audits, evaluations/inspections. While all active items are available on [HHS OIG Work Plan Active Table](https://oig.hhs.gov/reports-and-publications/workplan/active-item-table.asp), we are looking for all items. After digging into some of the work plan's implementation, we can source this data from utilizing the HTML address patterns for previously-completed items as well as current items.
  
-  
 ### Work Plan Scraping  
 OIG Work Plans: Contain work scope and focus of work to be undertaken, as well as links/connections to completed **reports**. 
 
@@ -87,10 +86,8 @@ Each of the work plan summary pages contain an html table, and a summary. The wo
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
 ```
 In the case of work plans, their 'Report Number(s)' field is a combination of the work plan number, as well as any attributed reports. We can identify reports as:
-<blockquote>
-- AUDITS/OAS: A-XX-XX-XXXXX (different from their work plan number)
-- EVALUATIONS/OEI: OEI-XX-XX-XXXXX (identical to their work plan number)
-</blockquote>
+> - AUDITS/OAS: A-XX-XX-XXXXX (different from their work plan number)
+> - EVALUATIONS/OEI: OEI-XX-XX-XXXXX (identical to their work plan number)
 
 These connected numbers are used to generate the reports (See below).
 
