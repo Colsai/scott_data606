@@ -20,7 +20,7 @@
 
 <hr></hr>
 
-# 1. Introduction
+# Introduction
 ![](<https://user-images.githubusercontent.com/70355052/182250677-fb1aa06e-fd43-4c9a-8084-362bb56d0a64.png?raw=true>)  
 <i>An overall picture of the project</i>
 
