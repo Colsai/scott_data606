@@ -86,22 +86,23 @@ Note:These are summaries of a larger report and communication log that OIG also 
   
 ### Work Plan Scraping  
 Work Plan Scraping was straightforward- scraped the summaries, and any links to connected reports. Reports were more challenging, as OAS and OEI’s websites took longer to find. 
+
+Each of the work plan summary pages contain an html table, and a summary. The work plan is easily scraped with Pandas' inbuilt read_html function.
 ```
-#Scrape work plan website with bs4
-response = requests.get(workplan_website)
-                
-soup = BeautifulSoup(response.text, 'html.parser')
-
-num_para_elements = len(soup.find_all('p'))
-
+workplan_website = f"https://oig.hhs.gov/reports-and-publications/workplan/summary/wp-summary-{summ_num}.asp"
+df = pd.read_html(workplan_website)[0]
+```
+As the summary is within the paragraph tags in the work plan, it is found with the tag, then removed.
+```
 wp_summary = ''.join(str(soup.find_all('p')[3:num_para_elements])).replace("<p>", "").replace("</p>","")[1:-1]
-
-df["Summary"] = wp_summary
 ```
+### Report Scraping  
+
+
+
+### Result
 ![image](https://user-images.githubusercontent.com/70355052/184550128-cb9723ad-3fdb-4085-a08c-389a8fe0255c.png)
  
-
-
 ### Text Cleaning/Tokenization
 After the work plan scraping was performed, a number of text cleaning steps were performed for preparing the corpuses for both EDA and usage within the LDA model. 
 1. Items were tokenized using Regexptokenizer, which removed punctuation within summaries.
