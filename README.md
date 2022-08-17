@@ -59,9 +59,9 @@ After elements of a work plan are completed, a formal report is drafted and rele
 </blockquote>
 
 <h4> What is topic modeling? </h4>
-Topic modeling is an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags. <sub>1</sub> In this case, we will test two topic modeling algorithms: Latent Dirichlet Allocation, and BERTopic.
+Bhutta descripes topic modeling as an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
 
-<sub>1</sub> https://www.analyticssteps.com/blogs/what-topic-modelling-nlp
+As the aforementioned work plan and report data we have is untagged and exploratory, topic modeling provides significant opportunity for identifying thematic similarities and clusters so that we can extract logic about the scope of OIG's current work. Thus, in this project, we will test and leverage two topic modeling algorithms: Latent Dirichlet Allocation and BERTopic, for making sense of these corpuses of text data.
 
 ## Questions within Project Scope
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
