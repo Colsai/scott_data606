@@ -255,7 +255,7 @@ For Reports, we chose **10 topics** for LDA, as a coherence score spike appeared
 ### BERTopic
 In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context." (https://github.com/MaartenGr/BERTopic/issues/40)
 
-However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer.
+However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer to improve BERTopic from simply throwing the current corpus at the modeling.
 
 ```
 #Lemmatizer for cleaning text
@@ -283,7 +283,7 @@ bert_model.get_topic_info()[1:]
 In this case, we can see that the most-common work plan topic was a *medicare,payment,hospital,service...* topic, which is identified in 91 work plans.  
 ![image](https://user-images.githubusercontent.com/70355052/185267021-af6ee0f7-394e-40f6-854c-e32d0a30399d.png)
 
-In the case of 
+We will provide a better picture of information
 
 A full picture of the work can be seen here:
 <table>
