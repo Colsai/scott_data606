@@ -222,15 +222,15 @@ As we have defined our data, explored it, and prepared it for modeling, we can b
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
 #### Latent Dirichlet Allocation (LDA):
-The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect)
+The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect) In this project, we utilize the Gensim package and its LDA functions to capture the topic model for this project.
   
 ### BERTopic (LDA): 
-BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. (Grootendorst)
+BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. (Grootendorst) A novel and recent technique, we utilize Grootendorst's extension of the BERT NLP model, created for topic modeling.
 
 ## Preparing the Models
 
 ### LDA
-The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best.  
+The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. This model is then run against a variable number of topics, chosen optimally by graphing umass coherence score against number of topics. These LDA models use **LdaMulticore**, an optimized Gensim LDA modeling technique for multiple cores (*None* specifes all available cores). Because of the smaller size of the corpus, we modifiy the iterations/passes within the LDAMulticore function- 200 iterations across the dataset was for the iterantions parameter, chosen for better model performance, and 10 passes through.
 
 ```
 for topic_num in range(1,30,3):
@@ -247,9 +247,10 @@ for topic_num in range(1,30,3):
                         coherence="u_mass")
 ```
 
-This coherence score is added to a list, then displayed.  In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
+This coherence score is added to a list of values, then displayed to the number of topics.  In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to, or higher than the number of OIG's strategic priorities). <br></br>
 ![image](https://user-images.githubusercontent.com/70355052/185263656-e5cbdd06-ff20-4385-b0ca-44d44d7e3ccf.png)  
-For Reports, we chose 10 topics for LDA, as a umass spike appeared at that topic number.
+
+For Reports, we chose **10 topics** for LDA, as a coherence score spike appeared at that topic number.
 
 ### BERTopic
 In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context." (https://github.com/MaartenGr/BERTopic/issues/40)
