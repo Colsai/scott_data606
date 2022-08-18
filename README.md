@@ -230,7 +230,24 @@ BERTopic is a topic modeling technique that leverages BERT embeddings and a clas
 ## Preparing the Models
 
 ### LDA
-The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best. In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
+The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best.  
+
+```
+for topic_num in range(1,30,3):
+    lda_model = LdaMulticore(corpus=corpus, 
+                            id2word=dictionary, 
+                            iterations=200, 
+                            num_topics=topic_num,
+                            workers = None, 
+                            passes=10)
+
+    #LDA Model Coherence Score
+    cm = CoherenceModel(model=lda_model, 
+                        corpus=corpus, 
+                        coherence="u_mass")
+```
+
+This coherence score is added to a list, then displayed.  In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
 ![image](https://user-images.githubusercontent.com/70355052/185263656-e5cbdd06-ff20-4385-b0ca-44d44d7e3ccf.png)  
 For Reports, we chose 10 topics for LDA, as a umass spike appeared at that topic number.
 
