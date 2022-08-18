@@ -231,7 +231,7 @@ BERTopic is a topic modeling technique that leverages BERT embeddings and a clas
 The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best. In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
 ![image](https://user-images.githubusercontent.com/70355052/185263656-e5cbdd06-ff20-4385-b0ca-44d44d7e3ccf.png)
 
-In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context. (https://github.com/MaartenGr/BERTopic/issues/40)"
+In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context." (https://github.com/MaartenGr/BERTopic/issues/40)
 
 However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer.
 
@@ -251,7 +251,16 @@ vectorizer_model = CountVectorizer(ngram_range=(1, 2),
                                    tokenizer=LemmaTokenizer())
 ```
 
-After running the work plan and reports data through this data preparation stage, we 
+After running the work plan and reports data through this data preparation stage, we fit the BERTopic model to the data. After the BERTopic model finishes, several in-built packages allow us to logically analyze the results. First, we can test the topics with:
+
+```
+#Skip the first element [-1], as the -1 topic captures any non-topic words
+bert_model.get_topic_info()[1:]
+```
+
+In this case, we can see that the most-common work plan topic was a *medicare,payment,hospital,service...* topic, which is identified in 91 work plans.
+![image](https://user-images.githubusercontent.com/70355052/185267021-af6ee0f7-394e-40f6-854c-e32d0a30399d.png)
+
 
 A full picture of the work can be seen here:
 <table>
