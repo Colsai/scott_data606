@@ -221,18 +221,15 @@ A deeper look into the EDA performed on both datasets can be found here:
 As we have defined our data, explored it, and prepared it for modeling, we can begin to use our data within the topic modeling algorithms. In this case, we use two fully-unsupervised topic model algorithms for clustering our topics. 
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
-### Latent Dirichlet Allocation (LDA):
+#### Latent Dirichlet Allocation (LDA):
 The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect)
   
 ### BERTopic (LDA): 
 BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. (Grootendorst)
 
-The instantiation of each model differs greatly. 
-
-For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best. We chose 17 topics for our LDA topic number, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
+## Preparing the Model
+The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. After the text data is tokenized, the number of topics was chosen by graphing umass coherence score against number of topics, where the coherence score performance appeared to perform best. In the case of the work plans, we chose 17 topics for our LDA topic number for workplans, as umass score appears to spike at this number, and we would expect at least 10 topics (as similar to the number of OIG's strategic priorities). <br></br>
 ![image](https://user-images.githubusercontent.com/70355052/185263656-e5cbdd06-ff20-4385-b0ca-44d44d7e3ccf.png)
-
-
 
 In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context. (https://github.com/MaartenGr/BERTopic/issues/40)"
 
@@ -253,6 +250,9 @@ vectorizer_model = CountVectorizer(ngram_range=(1, 2),
                                    stop_words=stopwords,
                                    tokenizer=LemmaTokenizer())
 ```
+
+After running the work plan and reports data through this data preparation stage, we 
+
 A full picture of the work can be seen here:
 <table>
 <tr>
