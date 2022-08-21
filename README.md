@@ -245,8 +245,9 @@ A deeper look into the EDA performed on both datasets can be found here:
 As we have defined our data, explored it, and prepared it for modeling, we can begin to use our data within the topic modeling algorithms. In this case, we use two fully-unsupervised topic model algorithms for clustering our topics. 
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
+
 #### Latent Dirichlet Allocation (LDA):
-The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect) In this project, we utilize the [Gensim](https://radimrehurek.com/gensim/) package and its LDA functions to capture the topic model for this project.
+The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is an unsupervised, generative model. It introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. In this project, we utilize the [Gensim](https://radimrehurek.com/gensim/) package and its LDA functions to capture the topic model for this project.
   
 ### BERTopic: 
 To provide some context on the BERTopic Topic Model, BERT is short for "Bidirectional Encoder Representations Using Transformers". Transformers are an attention mechanism that learns context from the relations between the words and subwords within texts (https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270).  
@@ -258,11 +259,11 @@ Grootendoorst writes that the BERTopic model runs through three major steps:
 `
 all-MiniLM-L6-v2
 `
-This sentence transformers model maps sentences and paragraphs to a 384 dimensional space (https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
+This sentence transformers model maps sentences and paragraphs to a 384 dimensional space, and is considered to be a performant, useful model (https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
 
 2. Clustering Documents: Grootendoorst's BERTopic model uses the Uniform Manifold Approximation and Projection (UMAP) dimmensinality reduction technique, a 'fast and scalable' dimensionality reduction technique to use on the dataset (https://umap-learn.readthedocs.io/en/latest/how_umap_works.html#:~:text=UMAP%20is%20an%20algorithm%20for,also%20provide%20specific%20concrete%20realizations.)
 
-3. Creating Topic Representation: BERTopic utilizes a class-based TF-IDF model on the dimensionality-reduced data.
+3. Creating Topic Representation: BERTopic utilizes a class-based TF-IDF model on the dimensionality-reduced data. In this case, it looks for term importance within each of the topics, to pull the most important terms and generate a topic.
 
 ## Preparing the Models
 
@@ -376,7 +377,27 @@ A full picture of the work and code can be seen here:
 Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency. In doing so, we utilize
   
 ### Returning to the central questions
+1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
+Medicare, Medicaid, protection for children, and opioid work were significant themes from the projects.
 
+2. Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
+Yes, we did. COVID-19 was a significant priority that was not a specific strategic priority, but was identified in several of the work plan topics that HHS OIG has produced. Similarly, nursing home oversight (more specific than simply 'group homes') was a topic identified by the models.
+
+3. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
+Manual comparison was done between topics. Medicare, medicaid, opioids, and drug rebates were all major focuses in work plans and their reports. 
+
+However, there were some differences:
+- The financial audit topic may have been too general, but did not have any obvious match to a reports topic.
+- Work plans included a distinct topic on information and cybersecurity that was not captured in the scope of the reports.
+
+4. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
+The topic connected well overall. The first four priorities were represented highly for both work plans and reports.Additionally, the BERTopic model identified Covid, IHS, and Nursing Homes as other categories of priorities for HHS OIG.However, priorities five (cybersecurity), and 7 (leveraging technology) were not identified frequently within the topic modeling, suggesting more future focus to align with the strategic priorities.
+
+5. Are there any topics that appear to be underrepresented from the reports and data?
+- Cybersecurity and technology work did not seem to factor strongly into either the current work plans or reports that BerTopic identified. This indicates that OIG should consider greater investment into those fields.
+- Interestingly, one topic that was missed was IHS (Indian Health Service) work. While not a specific priority, it was obvious from the scope of the topics that IHS oversight was an important area of work for OIG.
+- Another missing topic was the significance of focus on nursing homes. HHS OIG outlines their prioritization of nursing homes on their website, but may be a consideration for outlining a future priority with specific regards to that work.
+- COVID-19 oversight was not outlined as a specific priority in the strategic plan, although it was an obvious scope of work, heavily into the work that OIG is committing to. Further research revealed that COVID was designated as another priority area with specific asks (https://oig.hhs.gov/coronavirus/). However, it did not appear as significantly in OIG’s reports- indicating a likelihood in ongoing work.
 
 ### Next Steps
 
