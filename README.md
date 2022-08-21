@@ -449,8 +449,7 @@ Khalid, Irfan Alghani. “Implement Your Topic Modeling Using The BERTopic Libra
 
 Yadav, Kajal. “The Complete Practical Guide to Topic Modelling.” Medium, 22 Jan. 2022, https://towardsdatascience.com/topic-modelling-f51e5ebfb40a.
 
-## BERTopic Topic Modeling
-*BERTopic is a topic modeling technique that leverages 🤗 transformers and c-TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions. BERTopic supports guided, (semi-) supervised, and dynamic topic modeling. (MaartgenGr)* 
+## BERTopic Topic Modeling References
 
 #### Repo
 - https://github.com/MaartenGr/BERTopic
