@@ -225,7 +225,9 @@ Two unsupervised topic models were used for topic modeling the two cleaned repor
 The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect) In this project, we utilize the Gensim package and its LDA functions to capture the topic model for this project.
   
 ### BERTopic (LDA): 
-To provide some context on the BERTopic Topic Model, BERT is short for "Bidirectional Encoder Representations Using Transformers". Transformers are an attention mechanism that learns context from the relations between the words and subwords within texts (https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270). While BERT has a number of potential uses, such as sentence predictions, named entity recognition, or question answering tasks, in this case we utilize the language model with BERTtopic. BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions (Grootendorst). A novel and recent technique, we utilize Grootendorst's extension of the BERT NLP model, created for topic modeling.
+To provide some context on the BERTopic Topic Model, BERT is short for "Bidirectional Encoder Representations Using Transformers". Transformers are an attention mechanism that learns context from the relations between the words and subwords within texts (https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270).  
+
+While BERT has a number of potential uses, such as sentence predictions, named entity recognition, or question answering tasks, in this case we utilize the language model with BERTtopic. BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions (Grootendorst). A novel and recent technique, we utilize Grootendorst's extension of the BERT NLP model, created for topic modeling.
 
 Grootendoorst writes that the BERTopic model runs through three major steps:
 1.  Embedding documents- Document embeddings are created through sentence transformers. For BERTopic, the model is the Huggingface tarnsformer model, specifically using
@@ -264,9 +266,11 @@ This coherence score is added to a list of values, then displayed to the number 
 For Reports, we chose **10 topics** for LDA, as a coherence score spike appeared at that topic number.
 
 ### BERTopic
-In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. "In general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context." (https://github.com/MaartenGr/BERTopic/issues/40)
+In contrast, BERTopic requires little text preparation, and we skip most text cleaning and lemmatization. Since the BERT technique relies on word context. Grootendoorst writes, "in general... you do not need to preprocess your data... keeping the original structure of the text is especially important for transformer-based models to understand the context." (https://github.com/MaartenGr/BERTopic/issues/40)
 
-However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics. In this case, we can add a lemmatization/tokenization function through CountVectorizer to improve BERTopic from simply throwing the current corpus at the modeling.
+However, initial attempts with the BERTopic model on the work plan and reports dataset appeared to occasionally run into issues with clear topics, as it appeared small issues with the summaries were causing issues (potentially, the html tags and special characters within the reports and work plan summaries). 
+
+Therefore, in this case, we can add a lemmatization and stopwords function through CountVectorizer to improve BERTopic from simply throwing the current corpus at the modeling.
 
 ```
 #Lemmatizer for cleaning text
