@@ -4,7 +4,7 @@
 ### DATA606: UMBC Summer 2022 (June-August)  
 <hr></hr>
 
-## Link to Video Presentation
+## Presentation Links
 <table>
 <th> Final Presentation </th> 
 <th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
