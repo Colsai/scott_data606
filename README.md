@@ -5,7 +5,17 @@
 <hr></hr>
 
 ## Link to Video Presentation
-- https://drive.google.com/file/d/1DHCMt6DXZov_U4_U2P7l3Hb3Qh-RZmeL/view?usp=sharing
+<table>
+<th> Final Presentation </th> 
+<th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
+</tr>
+<tr>
+<th> Video Presentation Link </th> 
+<th>https://drive.google.com/file/d/1DHCMt6DXZov_U4_U2P7l3Hb3Qh-RZmeL/view?usp=sharing</th>
+</tr>
+<tr>
+</table>
+
 
 ## **Table of Contents**
 
