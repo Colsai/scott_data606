@@ -384,23 +384,21 @@ A full picture of the work and code can be seen here:
 <tr>
 </table>
 
-Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency to generate two topic models for the reports and work plans. 
-
-By taking a look at the insights that were created by the model, let's re-apply the identified topics to the initial questions:
+Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency to generate two topic models for the reports and work plans. Through that work, we have created two topic models using BERTopic on OIG's work plans and reports. By taking a look at the insights that were created by the model, let's finally re-apply the identified topics to the initial questions:
   
 ### Returning to the central questions
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
 <blockquote>
-Medicare, Medicaid, protection for children, and opioid work were significant themes from the projects.
+Medicare, Medicaid, protection for children, and opioid work were significant themes from the projects. Most priorities were represented significantly, though see questions 3-5 for more insight.
 </blockquote>
 
 2. Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
-Yes, we did. COVID-19 was a significant priority that was not a specific strategic priority, but was identified in several of the work plan topics that HHS OIG has produced. Similarly, nursing home oversight (more specific than simply 'group homes') was a topic identified by the models.
+Yes, we did. COVID-19 was a significant priority that was not a specific strategic priority, but was identified in several of the work plan topics that HHS OIG has produced. Similarly, nursing home oversight (more specific than simply 'group homes') was a topic identified by the models. Closer examinations with the models show several additional topics as not within the scope of HHS OIG's priorities, but of focus- general audits, IHS work, etc.
 </blockquote>
 
 3. Are plans (work plans) and findings (reports) similar in terms of topics identified and scope? 
 <blockquote>
-Yes, medicare, medicaid, opioids, and drug rebates were all major focuses in work plans and their reports, and most topics had equivalents between work plans and reports. 
+Yes, medicare, medicaid, opioids, and drug rebates were all major focuses in work plans and their reports, and most topics had equivalents between work plans and reports (see .csv).
 
 However, there were some differences:
 - The financial audit topic may have been too general, but did not have any obvious match to a reports topic.
@@ -409,14 +407,17 @@ However, there were some differences:
 
 4. How closely do the topics of work identified in the models connect to the priorities outlined by HHS OIG?
 <blockquote>
-The topic connected well overall. The first four priorities were represented highly for both work plans and reports.Additionally, the BERTopic model identified Covid, IHS, and Nursing Homes as other categories of priorities for HHS OIG.However, priorities five (cybersecurity), and 7 (leveraging technology) were not identified frequently within the topic modeling, suggesting more future focus to align with the strategic priorities.
+The topic connected well overall. The first four priorities were represented highly for both work plans and reports.Additionally, the BERTopic model identified Covid, IHS, and Nursing Homes as other categories of priorities for HHS OIG. However, priorities five (cybersecurity), and 7 (leveraging technology) were not identified frequently within the topic modeling, suggesting more future focus to align with the strategic priorities.
 </blockquote>
 
 5. Are there any topics that appear to be underrepresented from the reports and data?
 <blockquote>
 - Cybersecurity and technology work did not seem to factor strongly into either the current work plans or reports that BerTopic identified. This indicates that OIG should consider greater investment into those fields.  
+  
 - Interestingly, one topic that was missed was IHS (Indian Health Service) work. While not a specific priority, it was obvious from the scope of the topics that IHS oversight was an important area of work for OIG.  
+  
 - Another missing topic was the significance of focus on nursing homes. HHS OIG outlines their prioritization of nursing homes on their website, but may be a consideration for outlining a future priority with specific regards to that work.  
+  
 - COVID-19 oversight was not outlined as a specific priority in the strategic plan, although it was an obvious scope of work, heavily into the work that OIG is committing to. Further research revealed that COVID was designated as another priority area with specific asks (https://oig.hhs.gov/coronavirus/). However, it did not appear as significantly in OIG’s reports- indicating a likelihood in ongoing work.  
 </blockquote>
 
