@@ -47,12 +47,12 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 <li> Identifying opportunities to lower prescription drug spending for patients and programs 
 </ul>
 
-These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. This project aims linking these priorities to NLP-based topic modeling of the public work that HHS OIG specifies, in terms of two major areas of work: <u> work plans </u> and <u> reports </u> that HHS OIG has produced from FY2018-present, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp).  
+These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. This project aims linking these priorities to NLP-based topic modeling of the public work that HHS OIG specifies, in terms of two major areas of work: **work plans and reports that HHS OIG has produced from FY2018-present**, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp).  
 
 To introduce the textual data that will be leveraged:
 
 ### What are work plan items? 
-Work plan items are <u> projects that HHS OIG declares to the public for addressing in their work </u>; specifically with audits and evaluations and inspections that are performed. These items are identified, approved, posted, and work starts on their scope. Specifically, work plans are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>5</sub>"  
+Work plan items are **projects that HHS OIG declares to the public for addressing in their work**; specifically with audits and evaluations and inspections that are performed. These items are identified, approved, posted, and work starts on their scope. Specifically, work plans are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>5</sub>"  
   
 ### What are reports?
 After elements of a work plan are completed, a formal report is drafted and released to the public. <u> Reports include a rationale, methodology, findings, and recommendations </u>. For the scope of this project, we will focus on the outlined <u> Report-in-Brief (RIB) </u> documents, hereafter referred to as a report, as these summary documents provide valuable summarizations of larger reports.
