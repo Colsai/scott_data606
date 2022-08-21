@@ -378,13 +378,15 @@ A full picture of the work and code can be seen here:
 
 ## Conclusions 
 <table>
-<th> Final Presentation </th> 
-<th>https://github.com/Colsai/scott_data606/blob/main/Project_Presentation/HHSOIG_Topic_Modeling.pptx</th>
+<th> Analysis/Models Folder </th> 
+<th>[Github Folder](https://github.com/Colsai/scott_data606/tree/main/Saved_Models)</th>
 </tr>
 <tr>
 </table>
 
-Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency. In doing so, we utilize
+Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency to generate two topic models for the reports and work plans. 
+
+By taking a look at the insights that were created by the model, let's re-apply the identified topics to the initial questions:
   
 ### Returning to the central questions
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
@@ -422,7 +424,7 @@ The topic connected well overall. The first four priorities were represented hig
 
 While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in.
 
-Additionally, t
+Additionally, there appears to be broad application for topic modeling within the public sector, with many large text documents often difficult to classify, distill, and understand. As shown, topic modeling can be an effective strategy for comprehension, logical organization, and better characterization of project and report data in other spaces, as well.
   
 # References
  Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
