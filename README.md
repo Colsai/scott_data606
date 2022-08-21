@@ -417,20 +417,21 @@ The topic connected well overall. The first four priorities were represented hig
 
 5. Are there any topics that appear to be underrepresented from the reports and data?
 <blockquote>
-- Cybersecurity and technology work did not seem to factor strongly into either the current work plans or reports that BerTopic identified. This indicates that OIG should consider greater investment into those fields.  
   
-- Interestingly, one topic that was missed was IHS (Indian Health Service) work. While not a specific priority, it was obvious from the scope of the topics that IHS oversight was an important area of work for OIG.  
+Cybersecurity and technology work did not seem to factor strongly into either the current work plans or reports that BerTopic identified. This indicates that OIG should consider greater investment into those fields in terms of future projects and current focus of work, should they place high emphasis on this strategic priority. 
   
-- Another missing topic was the significance of focus on nursing homes. HHS OIG outlines their prioritization of nursing homes on their website, but may be a consideration for outlining a future priority with specific regards to that work.  
+Interestingly, one topic that was missed was **IHS (Indian Health Service** work. While not a specific priority, it was obvious from the scope of the topics that IHS oversight was an important area of work for OIG, and may be considered for elevation into stategic priorities, should this emphasis continue. 
   
-- COVID-19 oversight was not outlined as a specific priority in the strategic plan, although it was an obvious scope of work, heavily into the work that OIG is committing to. Further research revealed that COVID was designated as another priority area with specific asks (https://oig.hhs.gov/coronavirus/). However, it did not appear as significantly in OIG’s reports- indicating a likelihood in ongoing work.  
+Another missing topic was the significance of focus on **nursing homes**. HHS OIG outlines their prioritization of nursing homes on their website, but may be a consideration for outlining a future priority with specific regards to that work. This also aligns with the larger federal goal of protection on nursing homes, seniors, and people with disabilities (https://www.whitehouse.gov/briefing-room/statements-releases/2022/02/28/fact-sheet-protecting-seniors-and-people-with-disabilities-by-improving-safety-and-quality-of-care-in-the-nations-nursing-homes/).
+  
+COVID-19 oversight was also not outlined as a specific priority in the strategic plan, although it was an obvious scope of work, heavily into the work that OIG is committing to. Further research revealed that COVID was designated as another priority area with specific asks (https://oig.hhs.gov/coronavirus/). However, it did not appear as significantly in OIG’s reports- indicating a likelihood in ongoing work for the future, which makes sense due to the relative recency of the pandemic and its impact.
 </blockquote>
 
 ### Next Steps
 
-While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in.
+While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in, so that stakeholders could better-analyze this data.
 
-Additionally, there appears to be broad application for topic modeling within the public sector, with many large text documents often difficult to classify, distill, and understand. As shown, topic modeling can be an effective strategy for comprehension, logical organization, and better characterization of project and report data in other spaces, as well.
+Additionally, there appears to be broad application for topic modeling within the public sector, with many large text documents often difficult to classify, distill, and understand. As shown, topic modeling can be an effective strategy for comprehension, logical organization, and better characterization of project and report data in other spaces, as well. From this project and its initial findings, we are excited about the possibilities that topic modeling could lead to.
   
 # References
 Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
