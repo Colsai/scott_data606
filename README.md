@@ -5,7 +5,7 @@
 <hr></hr>
 
 ## Link to Video Presentation
-https://drive.google.com/file/d/1DHCMt6DXZov_U4_U2P7l3Hb3Qh-RZmeL/view?usp=sharing
+- https://drive.google.com/file/d/1DHCMt6DXZov_U4_U2P7l3Hb3Qh-RZmeL/view?usp=sharing
 
 ## **Table of Contents**
 
