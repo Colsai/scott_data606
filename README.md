@@ -256,7 +256,7 @@ As we have defined our data, explored it, and prepared it for modeling, we can b
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
 
-#### Latent Dirichlet Allocation (LDA):
+### Latent Dirichlet Allocation (LDA):
 The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is an unsupervised, generative model. It introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. In this project, we utilize the [Gensim](https://radimrehurek.com/gensim/) package and its LDA functions to capture the topic model for this project.
   
 ### BERTopic: 
