@@ -47,27 +47,31 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 <li> Identifying opportunities to lower prescription drug spending for patients and programs 
 </ul>
 
-These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. This project aims linking these priorities to NLP-based topic modeling of the public work that HHS OIG specifies, in terms of two major areas of work: **work plans and reports that HHS OIG has produced from FY2018-present**, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp).  
+These priorities are of critical importance to HHS OIG- thus, a look at how actual work projects and completed work can shed light on their commitment to each of these separate focus areas. 
+
+This project aims linking these priorities to the *unsupervised, NLP-based topic modeling* of HHS OIG's public work that is outlined to the public, in terms of two major areas of work: **work plans and reports that HHS OIG has produced from FY2018-present**, found on the HHS OIG Work Plan ( https://oig.hhs.gov/reports-and-publications/workplan/index.asp).  
 
 To introduce the textual data that will be leveraged:
 
-### What are work plan items? 
+### a. What are work plan items? 
 **Work plan items are projects that HHS OIG declares to the public for addressing in their work**; specifically with audits and evaluations and inspections that are performed. These items are identified, approved, posted, and work starts on their scope. Specifically, work plans are defined as, "...various projects including OIG audits and evaluations that are underway or planned to be addressed during the fiscal year and beyond by OIG's Office of Audit Services and Office of Evaluation and Inspections<sub>5</sub>"  
   
-### What are reports?
+### b. What are reports?
 After elements of a work plan are completed, a formal report is drafted and released to the public. **HHS OIG's Reports describe the conclusions of their work on a specific topic, and include a rationale, methodology, findings, and recommendations**. For the scope of this project, we will focus on the outlined <u> Report-in-Brief (RIB) documents, hereafter referred to as a report, as these summary documents provide valuable summarizations of larger reports.
   
 These work plan items and reports are all public data, and data has been collected on all work plan items from the audit and evaluation teams since 2017. Each of these work plans also have an attached report on the findings: some work plan items have many reports associated, and others have only one.</p>
 </blockquote>
 
 ### What is topic modeling?
-Bhutta descripes topic modeling as an unsupervised machine learning technique for scanning documents and determining patterns for clustering by finding word and phrase patterns. These algorithms are considered 'unsupervised', as they do not require training data or preexisting tags (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
+Bhutta descripes topic modeling as an *unsupervised machine learning technique* for scanning documents and determining patterns for clustering by finding word and phrase patterns (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
 
-Essentially, topic modeling is a natural language processing technique that ingests text data and returns a logical classification of topics that are frequent across each of the texts, additionally classifying in such a way that texts can have more than one topic.
+Because we do not assume any initial labels per each topic, we will utilize unsupervised learning techniques, defined as algorithms to discover hidden patterns or data groupings without the need for human intervention. (https://www.ibm.com/cloud/learn/unsupervised-learning)
 
-As the aforementioned work plan and report data we have is untagged and exploratory, topic modeling provides significant opportunity for identifying thematic similarities and *clusters* so that we can extract logic about the major themes of OIG's current work. We will aim to test and leverage two topic modeling algorithms: *Latent Dirichlet Allocation* and *BERTopic* (see [4. Modeling](#topic-modeling)), for making sense of these corpuses of text data.
+Essentially, topic modeling is a natural language processing technique that ingests text data and returns a logical classification of topics that are frequent across each of the texts- we are using text cleaning and clustering techniques to tell us what topics appear most-frequently within a body of texts.
 
-In doing this, we will focus our model creation around 5 central questions:
+As the aforementioned work plan and report data we have is untagged and exploratory, we believe that topic modeling can provide significant opportunity for identifying thematic similarities and clusters so that we can extract logic and insight about the major themes of OIG's current work, in a way that would be far more difficult, and less accurate by manual tagging. We will aim to test and leverage two topic modeling algorithms: *Latent Dirichlet Allocation* and *BERTopic* (see [4. Modeling](#topic-modeling) for more details on each area), for making sense of these corpuses of text data.
+
+After generating our topic models, we will focus our model creation around 5 central questions:
 
 ## Questions within Project Scope
 1. What are common themes/trends within the scope of work we can view from looking at the projects that OIG is undertaking?
@@ -220,7 +224,9 @@ Overall, when looking through the tokenized work plans and reports, obvious simi
   <i><center> Top-100 words, Reports </center></i><p></p>
 ![image](https://user-images.githubusercontent.com/70355052/185027815-c615e356-d08a-4f2d-be53-c2826d2ddfcf.png)<p></p>
 
-A quick glance at these two word clouds identifies how similar the language contained in the work plans and reports appears to be. *Medicare, Medicaid, Hospital, program* and *Provider*, obvious words that connect to OIG's CMS-heavy focus. However, there is some distinguishing language, such as reports containing language highlighting the end-stage of their work, ie *filed report, publication, and reviewed*. In the next step, topic modeling, we'll look at how closely these topics actually are.
+A quick glance at these two word clouds identifies how similar the language contained in the work plans and reports appears to be. *Medicare, Medicaid, Hospital, program* and *Provider*, obvious words that connect to OIG's CMS-heavy focus. However, there is some distinguishing language, such as reports containing language highlighting the end-stage of their work, ie *filed report, publication, and reviewed*. 
+
+In the next step, topic modeling, we'll utilize topic modeling to cluster around high-frequency terms.
 
 A deeper look into the EDA performed on both datasets can be found here:
 <table>
@@ -258,7 +264,9 @@ This sentence transformers model maps sentences and paragraphs to a 384 dimensio
 ## Preparing the Models
 
 ### LDA
-The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. This model is then run against a variable number of topics, chosen optimally by graphing umass coherence score against number of topics. These LDA models use **LdaMulticore**, an optimized Gensim LDA modeling technique for multiple cores (*None* specifes all available cores). Because of the smaller size of the corpus, we modifiy the iterations/passes within the LDAMulticore function- 200 iterations across the dataset was for the iterantions parameter, chosen for better model performance, and 10 passes through.
+The preparation steps of each model differs greatly. For LDA, text must be cleaned, prepared, and tokenized. This model is then run against a variable number of topics, chosen optimally by graphing umass coherence score against number of topics. 
+
+These LDA models use **LdaMulticore**, an optimized Gensim LDA modeling technique for multiple cores (*None* specifes all available cores). Because of the smaller size of the corpus, we modifiy the iterations/passes within the LDAMulticore function- 200 iterations across the dataset was for the iterantions parameter, chosen for better model performance, and 10 passes through.
 
 ```
 for topic_num in range(1,30,3):
@@ -339,9 +347,10 @@ bert_model.get_topic_info()[1:]
 In this case, we can see that the most-common work plan topic was a *medicare,payment,hospital,service...* topic, which is identified in 91 work plans.  
 ![image](https://user-images.githubusercontent.com/70355052/185267021-af6ee0f7-394e-40f6-854c-e32d0a30399d.png)
 
-We will provide a better picture of information
+### Decision to use BERTopic on Insights
+While we tested both LDA and BERTopic models, by reviewing each model, we decide to move forward with utilizing BERTopic's insights over LDA, primarily because the topics generated by the BERTopic model are far more comparable (18 work plan topics/19 report topics), over LDA's (13/10). Manual review of topics generated by BERTopic additionally show BERTopic's proposed topics to appear to be unique per topic, as well.
 
-A full picture of the work can be seen here:
+A full picture of the work and code can be seen here:
 <table>
 <tr>
 <th> Topic Modeling Reports </th> 
@@ -361,7 +370,7 @@ A full picture of the work can be seen here:
 <tr>
 </table>
 
-Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of the.
+Within this project, we performed an end-to-end project for scraping a novel dataset of public work products in order to analyze the larger work scope of a major US government oversight agency. In doing so, we utilize
   
 ### Returning to the central questions
 
@@ -369,6 +378,8 @@ Within this project, we performed an end-to-end project for scraping a novel dat
 ### Next Steps
 
 While we were able to create and analyze the initial topic models for the two datasets, we did not push the current model into a web-based environment. Thus, our next steps would be to consider an environment to produce the models in.
+
+Additionally, t
   
 # References
 <sub>1</sub> Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
