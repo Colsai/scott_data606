@@ -43,7 +43,7 @@ Healthcare compliance officers, hospitals, and the public are interested in how 
 <li> Combatting cybersecurity threats within HHS and healthcare  
 <li> Promoting patient safety and accuracy of payments in home and community settings
 <li> Leveraging technology as it intersects with HHS programs  
-<li> Ensuring HHS managed care and new healthcare models produce value  
+<li> Ensuring HHS managed care and new healthcare models produce value
 <li> Identifying opportunities to lower prescription drug spending for patients and programs 
 </ul>
 
