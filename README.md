@@ -243,9 +243,9 @@ As we have defined our data, explored it, and prepared it for modeling, we can b
   
 Two unsupervised topic models were used for topic modeling the two cleaned reports: LDA and BerTopic.
 #### Latent Dirichlet Allocation (LDA):
-The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect) In this project, we utilize the Gensim package and its LDA functions to capture the topic model for this project.
+The LDA model was created by David Blei, Andrew Ng, and Michael Jordan, is a generative model, but in text mining, it introduces a way to attach topical content to text documents. Each document is viewed as a mix of multiple distinct topics. (Sciencedirect) In this project, we utilize the [Gensim](https://radimrehurek.com/gensim/) package and its LDA functions to capture the topic model for this project.
   
-### BERTopic (LDA): 
+### BERTopic: 
 To provide some context on the BERTopic Topic Model, BERT is short for "Bidirectional Encoder Representations Using Transformers". Transformers are an attention mechanism that learns context from the relations between the words and subwords within texts (https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270).  
 
 While BERT has a number of potential uses, such as sentence predictions, named entity recognition, or question answering tasks, in this case we utilize the language model with BERTtopic. BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions (Grootendorst). A novel and recent technique, we utilize Grootendorst's extension of the BERT NLP model, created for topic modeling.
