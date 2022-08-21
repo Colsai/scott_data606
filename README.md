@@ -393,6 +393,7 @@ Medicare, Medicaid, protection for children, and opioid work were significant th
 </blockquote>
 
 2. Do we (and how do we) see the influence of major health events, such as COVID, within the scope of OIG's work?
+<blockquote>
 Yes, we did. COVID-19 was a significant priority that was not a specific strategic priority, but was identified in several of the work plan topics that HHS OIG has produced. Similarly, nursing home oversight (more specific than simply 'group homes') was a topic identified by the models. Closer examinations with the models show several additional topics as not within the scope of HHS OIG's priorities, but of focus- general audits, IHS work, etc.
 </blockquote>
 
