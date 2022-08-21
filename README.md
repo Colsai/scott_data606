@@ -76,7 +76,7 @@ These work plan items and reports are all public data, and data has been collect
 </blockquote>
 
 ### What is topic modeling?
-Bhutta descripes topic modeling as an *unsupervised machine learning technique* for scanning documents and determining patterns for clustering by finding word and phrase patterns (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
+Bhutta describes topic modeling as an *unsupervised machine learning technique* for scanning documents and determining patterns for clustering by finding word and phrase patterns (https://www.analyticssteps.com/blogs/what-topic-modelling-nlp). 
 
 Because we do not assume any initial labels per each topic, we will utilize unsupervised learning techniques, defined as algorithms to discover hidden patterns or data groupings without the need for human intervention. (https://www.ibm.com/cloud/learn/unsupervised-learning)
 
