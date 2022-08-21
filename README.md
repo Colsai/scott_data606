@@ -288,6 +288,32 @@ vectorizer_model = CountVectorizer(ngram_range=(1, 2),
                                    tokenizer=LemmaTokenizer())
 ```
 
+In terms of the full model, we can use get_params to show the exact parameters of the BERTopic model:
+
+```
+{'calculate_probabilities': False,
+ 'diversity': None,
+ 'embedding_model': <bertopic.backend._sentencetransformers.SentenceTransformerBackend at 0x7ff0d90f8950>,
+ 'hdbscan_model': HDBSCAN(min_cluster_size=10, prediction_data=True),
+ 'language': 'english',
+ 'low_memory': False,
+ 'min_topic_size': 10,
+ 'n_gram_range': (1, 2),
+ 'nr_topics': None,
+ 'seed_topic_list': None,
+ 'top_n_words': 10,
+ 'umap_model': UMAP(angular_rp_forest=True, low_memory=False, metric='cosine', min_dist=0.0, n_components=5, tqdm_kwds={'bar_format': '{desc}: {percentage:3.0f}%| {bar} {n_fmt}/{total_fmt} [{elapsed}]', 'desc': 'Epochs completed', 'disable': True}),
+ 'vectorizer_model': CountVectorizer(ngram_range=(1, 2),
+                 stop_words=['i', 'me', 'my', 'myself', 'we', 'our', 'ours',
+                             'ourselves', 'you', "you're", "you've", "you'll",
+                             "you'd", 'your', 'yours', 'yourself', 'yourselves',
+                             'he', 'him', 'his', 'himself', 'she', "she's",
+                             'her', 'hers', 'herself', 'it', "it's", 'its',
+                             'itself', ...],
+                 tokenizer=<__main__.LemmaTokenizer object at 0x7ff0d9af9850>),
+ 'verbose': False}
+```
+
 After running the work plan and reports data through this data preparation stage, we fit the BERTopic model to the data. After the BERTopic model finishes, several in-built packages allow us to logically analyze the results. First, we can test the topics with:
 
 ```
