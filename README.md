@@ -265,7 +265,7 @@ To provide some context on the BERTopic Topic Model, BERT is short for "Bidirect
 While BERT has a number of potential uses, such as sentence predictions, named entity recognition, or question answering tasks, in this case we utilize the language model with BERTtopic. BERTopic is a topic modeling technique that leverages BERT embeddings and a class-based TF-IDF to create dense clusters allowing for easily interpretable topics whilst keeping important words in the topic descriptions (Grootendorst). A novel and recent technique, we utilize Grootendorst's extension of the BERT NLP model, created for topic modeling.
 
 Grootendoorst writes that the BERTopic model runs through three major steps:
-1.  Embedding documents- Document embeddings are created through sentence transformers. For BERTopic, the model is the Huggingface tarnsformer model, specifically using
+1.  Embedding documents- Document embeddings are created through sentence transformers. For BERTopic, the model is the Huggingface tarnsformer model, specifically using:
 `
 all-MiniLM-L6-v2
 `
@@ -429,7 +429,7 @@ While we were able to create and analyze the initial topic models for the two da
 Additionally, there appears to be broad application for topic modeling within the public sector, with many large text documents often difficult to classify, distill, and understand. As shown, topic modeling can be an effective strategy for comprehension, logical organization, and better characterization of project and report data in other spaces, as well.
   
 # References
- Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
+Budget Basics: Medicare. https://www.pgpf.org/budget-basics/medicare. Accessed 12 June 2022.
 
 February 2022 Medicaid & CHIP Enrollment Data Highlights | Medicaid. https://www.medicaid.gov/medicaid/program-information/medicaid-and-chip-enrollment-data/report-highlights/index.html. Accessed 12 June 2022.
 
