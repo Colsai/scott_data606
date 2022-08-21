@@ -376,10 +376,14 @@ A full picture of the work and code can be seen here:
 </tr>
 </table>  
 
+Of additional note is that, in the final section, we analyze two saved BERTopic models. Saved topic models were used for the work plan and report data, as multiple run-throughs of unsupervised models can create different clusters. 
+
+Thus, the saved models are applied to the final analysis- it is possible that these insights may vary slightly, model-to-model, as applied across different iterations of the model themselves.
+
 ## Conclusions 
 <table>
 <th> Analysis/Models Folder </th> 
-<th>[Github Folder](https://github.com/Colsai/scott_data606/tree/main/Saved_Models)</th>
+<th>[Saved Models: Github Folder](https://github.com/Colsai/scott_data606/tree/main/Saved_Models)</th>
 </tr>
 <tr>
 </table>
